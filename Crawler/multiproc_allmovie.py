@@ -59,9 +59,15 @@ def pop_to_do(process_id, num_procs=num_procs):
 		num_to_pop = 1
 	with open('to_do.txt', 'w') as f:
 		if len(to_do) > 1: #if file is not empty after pop
-			if len(to_do[:len(to_do)-num_to_pop+1]) > 1:
-				for line in to_do[:num_to_pop]:
+			new_to_do = to_do[:len(to_do)-num_to_pop]
+			if type(new_to_do) == list:
+				for line in new_to_do:
 					f.write(line)
+			else:
+				f.write(new_to_do)
+			#if len(to_do[:len(to_do)-num_to_pop+1]) > 1:
+			#	for line in to_do[:num_to_pop]:
+			#		f.write(line)
 		else:
 			f.write('')
 	return to_do[(len(to_do)-num_to_pop):]
