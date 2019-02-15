@@ -1,0 +1,444 @@
+    <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112286258-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112286258-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Soon after relocating to Southeast Asia, an American family lands in the midst of a violent coup that could cost them their lives.">
+    <meta property="fb:app_id" content="1606326079643623">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="No Escape (2015) - Netflix | Flixable">
+    <meta property="og:description" content="Soon after relocating to Southeast Asia, an American family lands in the midst of a violent coup that could cost them their lives.">
+    <meta property="og:url" content="https://flixable.com/title/80016589/">
+    <meta property="og:image" content="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABZS8bjash9SNKtWcUEyhJQ-4u2VeCwlPsm4yO1zuav_ZVJyqVpJfIj7n8ITDunqNa1kGVt1VaPD_QlagczZ1Gr8r9l5Bash8gFKxizP0tSfjep96u6YJo6FVGukUsM9yCA5_7NPGqg.jpg">
+
+    <link rel="icon" href="/favicon.png">
+
+    <title>No Escape (2015) - Netflix | Flixable</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+        <link href="/style.css?ver=1.0.3" rel="stylesheet">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1706392859389035');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1706392859389035&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=1606326079643623';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Sign In</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <a href="https://www.facebook.com/v3.2/dialog/oauth?client_id=324240451429392&state=b679c05f161d5bbb89e775c2a9cd575a&response_type=code&sdk=php-sdk-5.7.0&redirect_uri=https%3A%2F%2Fflixable.com%2Fcallback.php&scope=email" class="btn btn-primary facebook-login-button"><span class="fab fa-facebook mr-2"></span><span class="font-weight-bold small text-uppercase">Continue With Facebook</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mr-lg-3" href="/"><img src="/images/logo.svg" style="height:28px; width:125px;"  alt="List of Movies and TV Shows on Netflix | Flixable"></a>
+
+      <div class="d-flex order-lg-1 ml-auto">
+        <form action="/" method="get" class="form-inline search-form">
+          <div class="input-group">
+            <input class="form-control d-none search-input typeahead" type="text" value="" name="s" placeholder="Title, person" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-danger search-button" type="submit"><span class="fas fa-search"></span></button>
+            </div>
+          </div>
+        </form>
+                <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link px-2" href="javascript:;" data-toggle="modal" data-target="#loginModal">Sign In</a>
+          </li>
+        </ul>
+              </div>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Browse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/popular/">Popular</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="/coming-soon/">Coming Soon</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="/leaving-netflix/">Leaving</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/netflix-originals/">Originals</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="/guides/">Guides</a>
+          </li>
+                            </ul>
+      </div>
+    </nav>
+
+                <div class="container">
+        <div class="row justify-content-center">
+             <div class="col-12 mt-4">
+               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+               <!-- Flixable - Responsive -->
+               <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7234786419871369"
+                 data-ad-slot="1479555091"
+                 data-ad-format="auto"></ins>
+               <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+             </div>
+           </div>      </div>
+              <main role="main">
+
+      <div class="container mt-4">
+              <div class="row mb-3">
+          <div class="col-12">
+            <h1 class="mb-3">
+              No Escape<br>
+              <small class="text-muted">2015</small>
+            </h1>
+            <div id="social">
+  <div class="fb-like" data-href="" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://flixable.com/title/80016589/" data-via="FlixableCom">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <a href="https://www.netflix.com/title/80016589" target="_blank">
+              <img class="poster mb-4" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABRUbw6v8nUvqRA3ayDnGD-rpQLsqIRGP0pa2YB76SXFLRj22XRgf61jjvcQ2hyb_SBKQGb2Kui9sUYy2JFACAL2QNqIuAXc3mpd1tyxVlfYXLbMg1rmHxHHukvpOpXkZNWjlU8Kmrw.jpg" alt="No Escape (2015)">
+            </a>
+          </div>
+          <div class="col-md-8 mb-3">
+            <div class="mb-2 font-weight-bold">
+              <span>R</span><span class="mx-2">&middot;</span><span>103 min</span><span class="mx-2">&middot;</span><span><a href="/genre/action-and-adventure/">Action & Adventure</a></span>            </div>
+            <div class="mb-3">
+              Soon after relocating to Southeast Asia, an American family lands in the midst of a violent coup that could cost them their lives.            </div>
+                        <div class="mb-2">
+              <span class="mr-2 font-weight-bold">Director:</span><span><a href="/director/?name=John+Erick+Dowdle">John Erick Dowdle</a></span>
+            </div>
+                                    <div class="mb-2">
+              <span class="mr-2 font-weight-bold">Cast:</span><span><a href="/actor/?name=Owen+Wilson">Owen Wilson</a>, <a href="/actor/?name=Lake+Bell">Lake Bell</a>, <a href="/actor/?name=Pierce+Brosnan">Pierce Brosnan</a>, <a href="/actor/?name=Sterling+Jerins">Sterling Jerins</a>, <a href="/actor/?name=Claire+Geare">Claire Geare</a>, <a href="/actor/?name=Thanawut+Ketsaro">Thanawut Ketsaro</a>, <a href="/actor/?name=Chatchawai+Kamonsakpitak">Chatchawai Kamonsakpitak</a>, <a href="/actor/?name=Sahajak+Boonthanakit">Sahajak Boonthanakit</a></span>
+            </div>
+                                    <div class="mb-2">
+              <span class="tmdb-rating"><img class="tmdb-logo" src="/images/tmdb-blue.svg"><span>6.8/10</span></span>
+            </div>
+                                    <div class="mb-2 plugin">
+              <span class="imdbRatingPlugin" data-user="ur85188756" data-title="tt1781922" data-style="p1"><a href="https://www.imdb.com/title/tt1781922/?ref_=plg_rt_1"><img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt=" No Escape (2015) on IMDb" /></a></span>
+              <script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script>
+            </div>
+                        <div class="mb-2">
+              <span class="mr-2 font-weight-bold">Click to Rate:</span><span class="rating" data-toggle="modal" data-target="#loginModal""><span class="far fa-star text-secondary" data-rating="1"></span><span class="far fa-star text-secondary" data-rating="2"></span><span class="far fa-star text-secondary" data-rating="3"></span><span class="far fa-star text-secondary" data-rating="4"></span><span class="far fa-star text-secondary" data-rating="5"></span></span>
+            </div>
+            <div class="mb-4">
+              <span class="mr-2 font-weight-bold">
+              Added to Netflix:</span><span>June 26, 2017</span>
+            </div>
+            <div>
+              <a href="https://www.netflix.com/title/80016589" class="btn btn-primary" target="_blank"><span class="fas fa-play mr-2"></span><span class="font-weight-bold small text-uppercase">Watch on Netflix</span></a>
+              <a href="javascript:;" class="btn btn-outline-primary list mt-2 mt-sm-0" data-toggle="modal" data-target="#loginModal"><span class="fas fa-plus mr-2"></span><span class="font-weight-bold small text-uppercase my-list-span">My List</span></a>
+            </div>
+          </div>
+        </div>
+            <hr>
+    <div class="row">
+      <div class="col-12 mb-2">
+        <h2>Similar Titles</h2>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80194671/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABfHo-8slbqSw8_FA7v5yxSS7WJjcc_OKWM4-pU93HG6rmfzVagsABfxRdD5x-YcEeuLIM8fRktjXOe1eeASy8wTNb_0lmmiRucJ-5Y-t8zDlA3cHDwWG4QvrjuOU8YLGTmYoqoCx7g.jpg" alt="The Climb (2017)">
+                <div class="rating-container small"><span class="font-weight-bold">6.8</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Action & Adventure</span>
+                  <span class="d-block font-weight-bold small">Comedies</span>
+                  <span class="d-block font-weight-bold small">Dramas</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80194671/">The Climb</a></strong><br>2017</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80080201/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABf8pU6sCc3Gc4Zy7-cZY2E2zBb-ZMEAxCw4Eyc9roYlzgWz5jvtuh3azH2dDWPB3l7Ct8zlYba8Y9P1OZujxRCzaRLwbJ9YmaHVdBUtWdqqi3gLFsu8-63x2oqdm5Pn35LPZz0RDWg.jpg" alt="The Wave (2015)">
+                <div class="rating-container small"><span class="font-weight-bold">6.5</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Action & Adventure</span>
+                  <span class="d-block font-weight-bold small">Dramas</span>
+                  <span class="d-block font-weight-bold small">International Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80080201/">The Wave</a></strong><br>2015</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80164206/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABZxdgiwcZRp4cC6Ge5VVQBrVE1_7vb6RL5oxHGq-9-LYo7KzvXjcrRYiAuy_byNU9ItS85I5a87k5iwjEk1iZiZFQYHst2TQCjIWK7_TWrLJOEwBB5o3-Unu--RebzR4dy8Fw0fwBg.jpg" alt="Cave (2016)">
+                <div class="rating-container small"><span class="font-weight-bold">4.2</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Action & Adventure</span>
+                  <span class="d-block font-weight-bold small">International Movies</span>
+                  <span class="d-block font-weight-bold small">Thrillers</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80164206/">Cave</a></strong><br>2016</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80015799/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABdLRq2ryMg6a2YUekLrs1I4NQhin_iuQUcm2piahGnFoe0oSazrIiXNWK46-4MMde0Ug882o4h2VnIuBsMNCncxVk9ECY9_5z5d-2kgwFI3DrQl36btfhQrpJ5zvrH5gdLxDZx10zA.jpg" alt="Good Kill (2014)">
+                <div class="rating-container small"><span class="font-weight-bold">6.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Dramas</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80015799/">Good Kill</a></strong><br>2014</p>
+  </div>
+    </div>
+      <hr>
+  <div class="row">
+    <div class="col-12 mb-2">
+      <h2>Recently Viewed</h2>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80148595/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABaoorc1h3vFdci7TckJA2YAVF0Lk2LOouaZqPMC0Dkw35ISQRdg9FNnH8f1gQgrAhXwpDgoi76o80DJSWUekG36M0Yc7PegnlXDIhdHhOb38ckzCIhSN6rkWnjjpMMHiINJONBaHjg.jpg" alt="Back and Forth (2016)">
+                <div class="rating-container small"><span class="font-weight-bold">6.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Comedies</span>
+                  <span class="d-block font-weight-bold small">Dramas</span>
+                  <span class="d-block font-weight-bold small">International Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80148595/">Back and Forth</a></strong><br>2016</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80081957/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABQ1u6-P44qnuYQ5svI_UgdAnsEVT6hxEaFfu3ws3uERWKs8Jv09ZBObjREPgx97VIG0mj-xdsiJOKTbizCKupVSjDYp2eZ7mi13nLvk8q_rsM61ceSfJTHrDfKi7ymc9hJb2XqzEng.jpg" alt="River (2015)">
+                <div class="rating-container small"><span class="font-weight-bold">6.1</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Thrillers</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80081957/">River</a></strong><br>2015</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80158919/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABVEbJEbnVuP25IhyofTdJlKFkobiieGjw5ODg3BMEJUYcAB2tX73eoyg_TIjSD74y8LWPNTKUDtofmb3pnU5Kn6Fnl7tHZA9e5H3wxhjorgRiyvz2FotksbSgcd1gvTQ5rHBugX4eQ.jpg" alt="Jack Whitehall: At Large (2017)">
+                <div class="rating-container small"><span class="font-weight-bold">6.9</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Stand-Up Comedy</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80158919/">Jack Whitehall: At Large</a></strong><br>2017</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80100929/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABSs5wGl3oVXSfSw-2oWAROvPn2e9MBgLHZafeAUay9uEI83fcod943a7ef1v6NwWRjnZd7aGvVwewnP7Jesl5Acs_19iJCEfD_5QnTQv4x7hHZU0y3x-OaCgCmGmWIWIMk3442n8Sw.jpg" alt="Cable Girls (2018)">
+                <div class="rating-container small"><span class="font-weight-bold">6.5</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">International TV Shows</span>
+                  <span class="d-block font-weight-bold small">Romantic TV Shows</span>
+                  <span class="d-block font-weight-bold small">Spanish-Language TV Shows</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80100929/">Cable Girls</a></strong><br>2018</p>
+  </div>
+  </div>
+            <div class="row justify-content-center">
+             <div class="col-12 my-2">
+               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+               <!-- Flixable - Responsive -->
+               <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7234786419871369"
+                 data-ad-slot="1479555091"
+                 data-ad-format="auto"></ins>
+               <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+             </div>
+           </div>        <hr>
+      </div> <!-- /container -->
+
+    </main>
+    <footer class="container">
+      <div class="row mb-3">
+        <div class="col-4">&copy; 2019 <a href="/">Flixable</a></div>
+        <div class="col-8 text-right">
+          <a href="/about/">About Us</a>
+          <span class="mx-1">|</span>
+          <a href="/contact/">Contact Us</a>
+          <span class="mx-1">|</span>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <span class="mx-1">|</span>
+          <a href="/countries/">Other Countries</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
+        <script src="/typeahead.bundle.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      var titles = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.whitespace,
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        remote: {
+          url: '/search.php?country=us&query=%QUERY',
+          wildcard: '%QUERY'
+        }
+      });
+      $("input.typeahead").typeahead(null, {
+        name: 'search',
+        display: 'title',
+        source: titles,
+        templates: {
+          suggestion: function(data){
+            return '<a href="/title/' + data.id + '/">' + data.title + '</a>';
+          }
+        }
+      });
+      $(window).on("hashchange", function(){
+        if(location.hash === '#submitContainer'){
+          window.scrollBy(0, -10);
+        }
+        else if(location.hash === '#filterContainer'){
+          window.scrollBy(0, -63);
+        }
+      }).trigger("hashchange");
+      var pathname = window.location.pathname;
+      $(".navbar-nav > li > a[href=\"" + pathname + "\"]").parent().addClass("active");
+      $(document).click(function(event){
+        if(event.isTrigger){
+          return;
+        }
+        if(!$(".search-form").is(event.target) && $(".search-form").has(event.target).length == 0 && !$(".search-input").hasClass("d-none")){
+          $(".search-button").click();
+        }
+        if(!$(".navbar").is(event.target) && ($(".navbar").has(event.target).length == 0 || $(".search-form").has(event.target).length > 0) && $(".navbar-collapse").hasClass("collapse show")){
+          $(".navbar-toggler").click();
+        }
+      });
+      $(".search-button").click(function(event){
+        if(event.isTrigger || $(".search-input").hasClass("d-none") || $(".tt-input").val() == ''){
+          event.preventDefault();
+        }
+        else{
+          return;
+        }
+        $(".search-input").toggleClass("d-none");
+        $(".search-button").toggleClass("search-button-expanded");
+        if(!$(".search-input").hasClass("d-none")){
+                    $(".search-input").css("width", "auto");
+                    $(".search-input").focus();
+        }
+        else{
+          $(this).blur();
+        }
+      });
+            $(".read-more").click(function(){
+        $(this).toggleClass("read-more");
+        if($(this).hasClass("read-more")){
+          $(this).text("Read more...");
+        }
+        else{
+          $(this).text("Read less...");
+        }
+      });
+                              var rating = 0;
+      $("a", ".plugin").click(function(event){
+        event.preventDefault();
+        var url = $(this).prop("href");
+        window.open(url, "_blank");
+      });
+      $("span", ".rating").mouseenter(function(){
+        $(this).nextAll().removeClass("fas").addClass("far text-secondary");
+        $(this).prevAll().addBack().removeClass("far text-secondary").addClass("fas rate");
+      });
+      $(".rating").mouseleave(function(){
+        $(".rated").removeClass("far text-secondary").addClass("fas");
+        $("span", ".rating").not(".rated").removeClass("fas rate").addClass("far text-secondary");
+      });
+                        $(".list").click(function(event){
+        sessionStorage.setItem('list', '1');
+      });
+      $("span", ".rating").click(function(){
+        sessionStorage.setItem('rate', $(this).data("rating"));
+      });
+          });
+        </script>
+  </body>
+</html>
+

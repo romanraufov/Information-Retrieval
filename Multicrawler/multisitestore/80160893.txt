@@ -1,0 +1,438 @@
+    <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112286258-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112286258-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Show hosts help prospective home buyers select country houses from all over Great Britain, highlighting each area&#039;s natural beauty and history.">
+    <meta property="fb:app_id" content="1606326079643623">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Escape to the Country Collection (2015) - Netflix | Flixable">
+    <meta property="og:description" content="Show hosts help prospective home buyers select country houses from all over Great Britain, highlighting each area&#039;s natural beauty and history.">
+    <meta property="og:url" content="https://flixable.com/title/80160893/">
+    <meta property="og:image" content="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABQ2HGYYt9zVtywd1lt_y7pA5yhQHJgAKTO8FC9bEbF39wWo2HGKjK0L1uO4pxOm1sHvo_DLWqnVbUvBlrxY2Dy1xJPNEvMYG2DNckx0DfgehBWFcUAQM0NDc1NJINqUqj0mvuLLghg.jpg">
+
+    <link rel="icon" href="/favicon.png">
+
+    <title>Escape to the Country Collection (2015) - Netflix | Flixable</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+        <link href="/style.css?ver=1.0.3" rel="stylesheet">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1706392859389035');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1706392859389035&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=1606326079643623';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Sign In</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <a href="https://www.facebook.com/v3.2/dialog/oauth?client_id=324240451429392&state=ac75eed7bdad1867b34716aef9603478&response_type=code&sdk=php-sdk-5.7.0&redirect_uri=https%3A%2F%2Fflixable.com%2Fcallback.php&scope=email" class="btn btn-primary facebook-login-button"><span class="fab fa-facebook mr-2"></span><span class="font-weight-bold small text-uppercase">Continue With Facebook</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mr-lg-3" href="/"><img src="/images/logo.svg" style="height:28px; width:125px;"  alt="List of Movies and TV Shows on Netflix | Flixable"></a>
+
+      <div class="d-flex order-lg-1 ml-auto">
+        <form action="/" method="get" class="form-inline search-form">
+          <div class="input-group">
+            <input class="form-control d-none search-input typeahead" type="text" value="" name="s" placeholder="Title, person" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-danger search-button" type="submit"><span class="fas fa-search"></span></button>
+            </div>
+          </div>
+        </form>
+                <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link px-2" href="javascript:;" data-toggle="modal" data-target="#loginModal">Sign In</a>
+          </li>
+        </ul>
+              </div>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Browse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/popular/">Popular</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="/coming-soon/">Coming Soon</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="/leaving-netflix/">Leaving</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/netflix-originals/">Originals</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="/guides/">Guides</a>
+          </li>
+                            </ul>
+      </div>
+    </nav>
+
+                <div class="container">
+        <div class="row justify-content-center">
+             <div class="col-12 mt-4">
+               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+               <!-- Flixable - Responsive -->
+               <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7234786419871369"
+                 data-ad-slot="1479555091"
+                 data-ad-format="auto"></ins>
+               <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+             </div>
+           </div>      </div>
+              <main role="main">
+
+      <div class="container mt-4">
+              <div class="row mb-3">
+          <div class="col-12">
+            <h1 class="mb-3">
+              Escape to the Country Collection<br>
+              <small class="text-muted">2015</small>
+            </h1>
+            <div id="social">
+  <div class="fb-like" data-href="" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://flixable.com/title/80160893/" data-via="FlixableCom">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <a href="https://www.netflix.com/title/80160893" target="_blank">
+              <img class="poster mb-4" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABemZb57YHVW8fbwnByd8_kDb62UZ0QgfOcEwDto6GZmZcsE_0o8AQXQkK0kTpGcJPoL-2XRCdkraD13vJ2W1KX3PmoA0C-vKG2DFrfFuSLSfggAgkNv5EPL12TscQwJsqNpU8eSrdA.jpg" alt="Escape to the Country Collection (2015)">
+            </a>
+          </div>
+          <div class="col-md-8 mb-3">
+            <div class="mb-2 font-weight-bold">
+              <span>TV-G</span><span class="mx-2">&middot;</span><span>1 Season</span><span class="mx-2">&middot;</span><span><a href="/genre/british-tv-shows/">British TV Shows</a>, <a href="/genre/international-tv-shows/">International TV Shows</a>, <a href="/genre/reality-tv/">Reality TV</a></span>            </div>
+            <div class="mb-3">
+              Show hosts help prospective home buyers select country houses from all over Great Britain, highlighting each area's natural beauty and history.            </div>
+                                    <div class="mb-2">
+              <span class="mr-2 font-weight-bold">Cast:</span><span><a href="/actor/?name=Jules+Hudson">Jules Hudson</a>, <a href="/actor/?name=Nicki+Chapman">Nicki Chapman</a>, <a href="/actor/?name=Jonnie+Irwin">Jonnie Irwin</a>, <a href="/actor/?name=Alistair+Appleton">Alistair Appleton</a></span>
+            </div>
+                                    <div class="mb-2">
+              <span class="tmdb-rating"><img class="tmdb-logo" src="/images/tmdb-blue.svg"><span>6.3/10</span></span>
+            </div>
+                                    <div class="mb-2 plugin">
+              <span class="imdbRatingPlugin" data-user="ur85188756" data-title="tt0390700" data-style="p1"><a href="https://www.imdb.com/title/tt0390700/?ref_=plg_rt_1"><img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt=" Escape to the Country (2002) on IMDb" /></a></span>
+              <script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script>
+            </div>
+                        <div class="mb-2">
+              <span class="mr-2 font-weight-bold">Click to Rate:</span><span class="rating" data-toggle="modal" data-target="#loginModal""><span class="far fa-star text-secondary" data-rating="1"></span><span class="far fa-star text-secondary" data-rating="2"></span><span class="far fa-star text-secondary" data-rating="3"></span><span class="far fa-star text-secondary" data-rating="4"></span><span class="far fa-star text-secondary" data-rating="5"></span></span>
+            </div>
+            <div class="mb-4">
+              <span class="mr-2 font-weight-bold">
+              Added to Netflix:</span><span>February 28, 2018</span>
+            </div>
+            <div>
+              <a href="https://www.netflix.com/title/80160893" class="btn btn-primary" target="_blank"><span class="fas fa-play mr-2"></span><span class="font-weight-bold small text-uppercase">Watch on Netflix</span></a>
+              <a href="javascript:;" class="btn btn-outline-primary list mt-2 mt-sm-0" data-toggle="modal" data-target="#loginModal"><span class="fas fa-plus mr-2"></span><span class="font-weight-bold small text-uppercase my-list-span">My List</span></a>
+            </div>
+          </div>
+        </div>
+            <hr>
+    <div class="row">
+      <div class="col-12 mb-2">
+        <h2>Similar Titles</h2>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80160755/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABXku0TeHVvtBcVTwqf_2xy9JfxamjPRzngJEHb1wq-UQikDg31R3l0IehWi1WqjarARisC9PlpE8YSXRM5nSfVRonLiSkTm91DEq4wWSOrfSkNxJAFbzb89FiuBUzjwO6sWO1ca4tQ.jpg" alt="Grand Designs (2016)">
+                <div class="rating-container small"><span class="font-weight-bold">7.4</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">British TV Shows</span>
+                  <span class="d-block font-weight-bold small">International TV Shows</span>
+                  <span class="d-block font-weight-bold small">Reality TV</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80160755/">Grand Designs</a></strong><br>2016</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80203249/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABeGYW1guwQsBSg5hbXPXx0P-83RnuKD80J0a5mwKfMU8nx3uMo9DgxSHVE6-XijT14D6X_u5YTIl4teALWZItpHcoWNWHSZ79mgftyC63cv3i0eUU8FlP4BYMv_ZfDLOOYb07j5rUw.jpg" alt="Luxury Travel Show (2016)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">British TV Shows</span>
+                  <span class="d-block font-weight-bold small">Docuseries</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80203249/">Luxury Travel Show</a></strong><br>2016</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80118954/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABaoYJ0Mz1MXgbEhZo-uM6n1lnqEsc_cK2N3KPsQuxCiKa5MrLc826RvrP9ui2lMnnDqxtes8GNGXNtRWEoJzX23MQUnMUi-7rnp0XRkWEaGbW_qgtrmtMhgN1OMJBFwlkbREQRP3YA.jpg" alt="Very British Problems (2015)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">British TV Shows</span>
+                  <span class="d-block font-weight-bold small">Docuseries</span>
+                  <span class="d-block font-weight-bold small">TV Comedies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80118954/">Very British Problems</a></strong><br>2015</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80204929/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABYrGS7GdPF-vU3YBjfybNKbnTK3JEac93AB1TWLTIC5Tnbhe9vnR2gCD16gnvwEcG7ZFZW6oxVcqYqJPkdLMF4VWJlm4o2va9YN-s9RpZaau4eDOAsS-rB_4UIZRgJDWDyPGiKkP1A.jpg" alt="Cheapest Weddings (2016)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">International TV Shows</span>
+                  <span class="d-block font-weight-bold small">Reality TV</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80204929/">Cheapest Weddings</a></strong><br>2016</p>
+  </div>
+    </div>
+      <hr>
+  <div class="row">
+    <div class="col-12 mb-2">
+      <h2>Recently Viewed</h2>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80148595/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABaoorc1h3vFdci7TckJA2YAVF0Lk2LOouaZqPMC0Dkw35ISQRdg9FNnH8f1gQgrAhXwpDgoi76o80DJSWUekG36M0Yc7PegnlXDIhdHhOb38ckzCIhSN6rkWnjjpMMHiINJONBaHjg.jpg" alt="Back and Forth (2016)">
+                <div class="rating-container small"><span class="font-weight-bold">6.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Comedies</span>
+                  <span class="d-block font-weight-bold small">Dramas</span>
+                  <span class="d-block font-weight-bold small">International Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80148595/">Back and Forth</a></strong><br>2016</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80081957/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABQ1u6-P44qnuYQ5svI_UgdAnsEVT6hxEaFfu3ws3uERWKs8Jv09ZBObjREPgx97VIG0mj-xdsiJOKTbizCKupVSjDYp2eZ7mi13nLvk8q_rsM61ceSfJTHrDfKi7ymc9hJb2XqzEng.jpg" alt="River (2015)">
+                <div class="rating-container small"><span class="font-weight-bold">6.1</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Thrillers</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80081957/">River</a></strong><br>2015</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80158919/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABVEbJEbnVuP25IhyofTdJlKFkobiieGjw5ODg3BMEJUYcAB2tX73eoyg_TIjSD74y8LWPNTKUDtofmb3pnU5Kn6Fnl7tHZA9e5H3wxhjorgRiyvz2FotksbSgcd1gvTQ5rHBugX4eQ.jpg" alt="Jack Whitehall: At Large (2017)">
+                <div class="rating-container small"><span class="font-weight-bold">6.9</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Stand-Up Comedy</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80158919/">Jack Whitehall: At Large</a></strong><br>2017</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80100929/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABSs5wGl3oVXSfSw-2oWAROvPn2e9MBgLHZafeAUay9uEI83fcod943a7ef1v6NwWRjnZd7aGvVwewnP7Jesl5Acs_19iJCEfD_5QnTQv4x7hHZU0y3x-OaCgCmGmWIWIMk3442n8Sw.jpg" alt="Cable Girls (2018)">
+                <div class="rating-container small"><span class="font-weight-bold">6.5</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">International TV Shows</span>
+                  <span class="d-block font-weight-bold small">Romantic TV Shows</span>
+                  <span class="d-block font-weight-bold small">Spanish-Language TV Shows</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80100929/">Cable Girls</a></strong><br>2018</p>
+  </div>
+  </div>
+            <div class="row justify-content-center">
+             <div class="col-12 my-2">
+               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+               <!-- Flixable - Responsive -->
+               <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7234786419871369"
+                 data-ad-slot="1479555091"
+                 data-ad-format="auto"></ins>
+               <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+             </div>
+           </div>        <hr>
+      </div> <!-- /container -->
+
+    </main>
+    <footer class="container">
+      <div class="row mb-3">
+        <div class="col-4">&copy; 2019 <a href="/">Flixable</a></div>
+        <div class="col-8 text-right">
+          <a href="/about/">About Us</a>
+          <span class="mx-1">|</span>
+          <a href="/contact/">Contact Us</a>
+          <span class="mx-1">|</span>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <span class="mx-1">|</span>
+          <a href="/countries/">Other Countries</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
+        <script src="/typeahead.bundle.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      var titles = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.whitespace,
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        remote: {
+          url: '/search.php?country=us&query=%QUERY',
+          wildcard: '%QUERY'
+        }
+      });
+      $("input.typeahead").typeahead(null, {
+        name: 'search',
+        display: 'title',
+        source: titles,
+        templates: {
+          suggestion: function(data){
+            return '<a href="/title/' + data.id + '/">' + data.title + '</a>';
+          }
+        }
+      });
+      $(window).on("hashchange", function(){
+        if(location.hash === '#submitContainer'){
+          window.scrollBy(0, -10);
+        }
+        else if(location.hash === '#filterContainer'){
+          window.scrollBy(0, -63);
+        }
+      }).trigger("hashchange");
+      var pathname = window.location.pathname;
+      $(".navbar-nav > li > a[href=\"" + pathname + "\"]").parent().addClass("active");
+      $(document).click(function(event){
+        if(event.isTrigger){
+          return;
+        }
+        if(!$(".search-form").is(event.target) && $(".search-form").has(event.target).length == 0 && !$(".search-input").hasClass("d-none")){
+          $(".search-button").click();
+        }
+        if(!$(".navbar").is(event.target) && ($(".navbar").has(event.target).length == 0 || $(".search-form").has(event.target).length > 0) && $(".navbar-collapse").hasClass("collapse show")){
+          $(".navbar-toggler").click();
+        }
+      });
+      $(".search-button").click(function(event){
+        if(event.isTrigger || $(".search-input").hasClass("d-none") || $(".tt-input").val() == ''){
+          event.preventDefault();
+        }
+        else{
+          return;
+        }
+        $(".search-input").toggleClass("d-none");
+        $(".search-button").toggleClass("search-button-expanded");
+        if(!$(".search-input").hasClass("d-none")){
+                    $(".search-input").css("width", "auto");
+                    $(".search-input").focus();
+        }
+        else{
+          $(this).blur();
+        }
+      });
+            $(".read-more").click(function(){
+        $(this).toggleClass("read-more");
+        if($(this).hasClass("read-more")){
+          $(this).text("Read more...");
+        }
+        else{
+          $(this).text("Read less...");
+        }
+      });
+                              var rating = 0;
+      $("a", ".plugin").click(function(event){
+        event.preventDefault();
+        var url = $(this).prop("href");
+        window.open(url, "_blank");
+      });
+      $("span", ".rating").mouseenter(function(){
+        $(this).nextAll().removeClass("fas").addClass("far text-secondary");
+        $(this).prevAll().addBack().removeClass("far text-secondary").addClass("fas rate");
+      });
+      $(".rating").mouseleave(function(){
+        $(".rated").removeClass("far text-secondary").addClass("fas");
+        $("span", ".rating").not(".rated").removeClass("fas rate").addClass("far text-secondary");
+      });
+                        $(".list").click(function(event){
+        sessionStorage.setItem('list', '1');
+      });
+      $("span", ".rating").click(function(){
+        sessionStorage.setItem('rate', $(this).data("rating"));
+      });
+          });
+        </script>
+  </body>
+</html>
+

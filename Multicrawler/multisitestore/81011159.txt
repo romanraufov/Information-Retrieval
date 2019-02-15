@@ -1,0 +1,437 @@
+    <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112286258-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112286258-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A cohabiting couple in their 20s navigate the ups and downs of work, modern-day relationships and finding themselves in contemporary Mumbai.">
+    <meta property="fb:app_id" content="1606326079643623">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Little Things (2018) - Netflix | Flixable">
+    <meta property="og:description" content="A cohabiting couple in their 20s navigate the ups and downs of work, modern-day relationships and finding themselves in contemporary Mumbai.">
+    <meta property="og:url" content="https://flixable.com/title/81011159/">
+    <meta property="og:image" content="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABbcoTN62Es3_ns7jSlb_xriFkLSyzcivdWCHOD0A-CNo1zd76Y_ejNP6yEaPcHg-QMjR5-tvddaVTVNJPYO3tHH2bWq_oFkYPbhfoVDry3sQq3Sq1X5-N4V7R3l1w3H3pSAUxxeoyw.jpg">
+
+    <link rel="icon" href="/favicon.png">
+
+    <title>Little Things (2018) - Netflix | Flixable</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+        <link href="/style.css?ver=1.0.3" rel="stylesheet">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1706392859389035');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1706392859389035&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=1606326079643623';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Sign In</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <a href="https://www.facebook.com/v3.2/dialog/oauth?client_id=324240451429392&state=8da4f8d1c93e0f99f0cd7ef3a06a9737&response_type=code&sdk=php-sdk-5.7.0&redirect_uri=https%3A%2F%2Fflixable.com%2Fcallback.php&scope=email" class="btn btn-primary facebook-login-button"><span class="fab fa-facebook mr-2"></span><span class="font-weight-bold small text-uppercase">Continue With Facebook</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mr-lg-3" href="/"><img src="/images/logo.svg" style="height:28px; width:125px;"  alt="List of Movies and TV Shows on Netflix | Flixable"></a>
+
+      <div class="d-flex order-lg-1 ml-auto">
+        <form action="/" method="get" class="form-inline search-form">
+          <div class="input-group">
+            <input class="form-control d-none search-input typeahead" type="text" value="" name="s" placeholder="Title, person" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-danger search-button" type="submit"><span class="fas fa-search"></span></button>
+            </div>
+          </div>
+        </form>
+                <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link px-2" href="javascript:;" data-toggle="modal" data-target="#loginModal">Sign In</a>
+          </li>
+        </ul>
+              </div>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Browse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/popular/">Popular</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="/coming-soon/">Coming Soon</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="/leaving-netflix/">Leaving</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/netflix-originals/">Originals</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="/guides/">Guides</a>
+          </li>
+                            </ul>
+      </div>
+    </nav>
+
+                <div class="container">
+        <div class="row justify-content-center">
+             <div class="col-12 mt-4">
+               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+               <!-- Flixable - Responsive -->
+               <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7234786419871369"
+                 data-ad-slot="1479555091"
+                 data-ad-format="auto"></ins>
+               <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+             </div>
+           </div>      </div>
+              <main role="main">
+
+      <div class="container mt-4">
+              <div class="row mb-3">
+          <div class="col-12">
+            <h1 class="mb-3">
+              Little Things<br>
+              <small class="text-muted">2018</small>
+            </h1>
+            <div id="social">
+  <div class="fb-like" data-href="" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://flixable.com/title/81011159/" data-via="FlixableCom">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <a href="https://www.netflix.com/title/81011159" target="_blank">
+              <img class="poster mb-4" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABVz9SPky06eD3Xzoaa6Gz_4e5Dsx9gamfmcMaMqXJ-DxRP8pM_FmF6_MS6Reyy1kWmqFpO64npzWj5nLK38VBGI_VdwKlFmwh8zHkhFWISDcl4RZriUa0MOQdm7FlVRuzqn12lomWg.jpg" alt="Little Things (2018)">
+            </a>
+          </div>
+          <div class="col-md-8 mb-3">
+            <div class="mb-2 font-weight-bold">
+              <span>TV-MA</span><span class="mx-2">&middot;</span><span>2 Seasons</span><span class="mx-2">&middot;</span><span><a href="/genre/international-tv-shows/">International TV Shows</a>, <a href="/genre/romantic-tv-shows/">Romantic TV Shows</a>, <a href="/genre/tv-comedies/">TV Comedies</a></span>            </div>
+            <div class="mb-3">
+              A cohabiting couple in their 20s navigate the ups and downs of work, modern-day relationships and finding themselves in contemporary Mumbai.            </div>
+                                    <div class="mb-2">
+              <span class="mr-2 font-weight-bold">Cast:</span><span><a href="/actor/?name=Dhruv+Sehgal">Dhruv Sehgal</a>, <a href="/actor/?name=Mithila+Palkar">Mithila Palkar</a></span>
+            </div>
+                                    <div class="mb-2">
+              <span class="tmdb-rating"><img class="tmdb-logo" src="/images/tmdb-blue.svg"><span>8.3/10</span></span>
+            </div>
+                                    <div class="mb-2 plugin">
+              <span class="imdbRatingPlugin" data-user="ur85188756" data-title="tt6522580" data-style="p1"><a href="https://www.imdb.com/title/tt6522580/?ref_=plg_rt_1"><img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt=" Little Things (2016) on IMDb" /></a></span>
+              <script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script>
+            </div>
+                        <div class="mb-2">
+              <span class="mr-2 font-weight-bold">Click to Rate:</span><span class="rating" data-toggle="modal" data-target="#loginModal""><span class="far fa-star text-secondary" data-rating="1"></span><span class="far fa-star text-secondary" data-rating="2"></span><span class="far fa-star text-secondary" data-rating="3"></span><span class="far fa-star text-secondary" data-rating="4"></span><span class="far fa-star text-secondary" data-rating="5"></span></span>
+            </div>
+            <div class="mb-4">
+              <span class="mr-2 font-weight-bold">
+              New Season Added:</span><span>October 5, 2018</span>
+            </div>
+            <div>
+              <a href="https://www.netflix.com/title/81011159" class="btn btn-primary" target="_blank"><span class="fas fa-play mr-2"></span><span class="font-weight-bold small text-uppercase">Watch on Netflix</span></a>
+              <a href="javascript:;" class="btn btn-outline-primary list mt-2 mt-sm-0" data-toggle="modal" data-target="#loginModal"><span class="fas fa-plus mr-2"></span><span class="font-weight-bold small text-uppercase my-list-span">My List</span></a>
+            </div>
+          </div>
+        </div>
+            <hr>
+    <div class="row">
+      <div class="col-12 mb-2">
+        <h2>Similar Titles</h2>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80239639/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABXmvQDeG0qZlN51gxaNqspAb6tGE7KbNVq4rGVknp3MoLnTiYpnaF02M0m3IPwMXwFwsP26iZn6wQ2D8KWITgK6e8lnpBHlwgPWlt97aThi2J9BV3JwPTzYPUNcxq3EE8pVc4_Qtbw.jpg" alt="Sierra Burgess Is A Loser (2018)">
+                <div class="rating-container small"><span class="font-weight-bold">6.7</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Comedies</span>
+                  <span class="d-block font-weight-bold small">Romantic Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80239639/">Sierra Burgess Is A Loser</a></strong><br>2018</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80156913/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABRERVK0xXVafM-xox3oQnwiLMeQXlfDrSnLgYc-uOsOEg2Ehad1yCmjjQkXcuTMeB_kL-3d0yGwKpBdbkzroh63f1St2HeD6rjJNiyZcex64rbClM-3tF3Z1tXUrS5M5nYO5KEFF_w.jpg" alt="Peculiar Pets (2010)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Documentaries</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80156913/">Peculiar Pets</a></strong><br>2010</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80224150/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABafsMXF4onMmkTSDwEgvSdrOJiLY3FF5pYeVawJILyRe0w99gBL19IreGGth61c9lTnJ_sigK3MwA_1D7DQ4vvXU30c1rU7mk-D9uUifU6CvU49ERcv5maGVksxpALtC494ZhiCMVg.jpg" alt="The Lodgers (2017)">
+                <div class="rating-container small"><span class="font-weight-bold">4.8</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Horror Movies</span>
+                  <span class="d-block font-weight-bold small">International Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80224150/">The Lodgers</a></strong><br>2017</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80123950/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABZX7jkV0RIT4fMIH6F6aBUeZg3RJVHdfxFA8dJ84NQb8yTzZ2dbEwYSctlGxYu0NsZunNgPiP1l7ZJfoJxmuGZcxx2_uifSRkru_qUo9oDvtElKOz9W5tBpPYNHOuhB-u3TjabWHIQ.jpg" alt="I Am Me! (2016)">
+                <div class="rating-container small"><span class="font-weight-bold">8.5</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">International TV Shows</span>
+                  <span class="d-block font-weight-bold small">Spanish-Language TV Shows</span>
+                  <span class="d-block font-weight-bold small">TV Comedies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80123950/">I Am Me!</a></strong><br>2016</p>
+  </div>
+    </div>
+      <hr>
+  <div class="row">
+    <div class="col-12 mb-2">
+      <h2>Recently Viewed</h2>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/70227162/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABSIAxgYKSTlL5DZI8FklBgsVr8uI9ne6RY3-p4kEjxEdKfbvzRs7Gk5pATuiOHVaYLwnJdnVzXbFiwfXmO8g9B-lCQkFpMPaDZWpNuOV7TEnt56hjpo_MddmeCV4aRovV_dx-lu_5A.jpg" alt="Green Wing (2006)">
+                <div class="rating-container small"><span class="font-weight-bold">8.2</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">British TV Shows</span>
+                  <span class="d-block font-weight-bold small">TV Comedies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/70227162/">Green Wing</a></strong><br>2006</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/81011159/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABVz9SPky06eD3Xzoaa6Gz_4e5Dsx9gamfmcMaMqXJ-DxRP8pM_FmF6_MS6Reyy1kWmqFpO64npzWj5nLK38VBGI_VdwKlFmwh8zHkhFWISDcl4RZriUa0MOQdm7FlVRuzqn12lomWg.jpg" alt="Little Things (2018)">
+                <div class="rating-container small"><span class="font-weight-bold">8.3</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">International TV Shows</span>
+                  <span class="d-block font-weight-bold small">Romantic TV Shows</span>
+                  <span class="d-block font-weight-bold small">TV Comedies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/81011159/">Little Things</a></strong><br>2018</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/81026667/">
+        <img class="poster" src="https://occ-0-2705-2706.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABfVQJroTKBGMDYsoCUnWco8NELp7LdX2Ln_0J9ZM9soONuVHEIldeV0WNxopSAUcZHDZP7UJ_cLHKxOkAMb1IzgaRyyb-lWE-j4iWP5-RDWH5GWYTxATemi8GCKdGConrcpjTt8YKA.jpg" alt="Outlawed (2018)">
+                <div class="rating-container small"><span class="font-weight-bold">10.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Action & Adventure</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/81026667/">Outlawed</a></strong><br>2018</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80988834/">
+        <img class="poster" src="https://occ-0-2705-2706.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABQnyRfS8W5N3u_A1eRcpOBq9PVSFU3zR95DrwFfQFoQwDH6RrTB2D_gJl9LUV5Zihr4LRmyH8pm0TN9bKCuG2puZ8xU5uPvAuMpHT5EmISitcIBJu3Xxk9oUWX0Gk1BxINij9exKFw.jpg" alt="Yucatán (2018)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Comedies</span>
+                  <span class="d-block font-weight-bold small">International Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80988834/">Yucatán</a></strong><br>2018</p>
+  </div>
+  </div>
+            <div class="row justify-content-center">
+             <div class="col-12 my-2">
+               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+               <!-- Flixable - Responsive -->
+               <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7234786419871369"
+                 data-ad-slot="1479555091"
+                 data-ad-format="auto"></ins>
+               <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+             </div>
+           </div>        <hr>
+      </div> <!-- /container -->
+
+    </main>
+    <footer class="container">
+      <div class="row mb-3">
+        <div class="col-4">&copy; 2019 <a href="/">Flixable</a></div>
+        <div class="col-8 text-right">
+          <a href="/about/">About Us</a>
+          <span class="mx-1">|</span>
+          <a href="/contact/">Contact Us</a>
+          <span class="mx-1">|</span>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <span class="mx-1">|</span>
+          <a href="/countries/">Other Countries</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
+        <script src="/typeahead.bundle.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      var titles = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.whitespace,
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        remote: {
+          url: '/search.php?country=us&query=%QUERY',
+          wildcard: '%QUERY'
+        }
+      });
+      $("input.typeahead").typeahead(null, {
+        name: 'search',
+        display: 'title',
+        source: titles,
+        templates: {
+          suggestion: function(data){
+            return '<a href="/title/' + data.id + '/">' + data.title + '</a>';
+          }
+        }
+      });
+      $(window).on("hashchange", function(){
+        if(location.hash === '#submitContainer'){
+          window.scrollBy(0, -10);
+        }
+        else if(location.hash === '#filterContainer'){
+          window.scrollBy(0, -63);
+        }
+      }).trigger("hashchange");
+      var pathname = window.location.pathname;
+      $(".navbar-nav > li > a[href=\"" + pathname + "\"]").parent().addClass("active");
+      $(document).click(function(event){
+        if(event.isTrigger){
+          return;
+        }
+        if(!$(".search-form").is(event.target) && $(".search-form").has(event.target).length == 0 && !$(".search-input").hasClass("d-none")){
+          $(".search-button").click();
+        }
+        if(!$(".navbar").is(event.target) && ($(".navbar").has(event.target).length == 0 || $(".search-form").has(event.target).length > 0) && $(".navbar-collapse").hasClass("collapse show")){
+          $(".navbar-toggler").click();
+        }
+      });
+      $(".search-button").click(function(event){
+        if(event.isTrigger || $(".search-input").hasClass("d-none") || $(".tt-input").val() == ''){
+          event.preventDefault();
+        }
+        else{
+          return;
+        }
+        $(".search-input").toggleClass("d-none");
+        $(".search-button").toggleClass("search-button-expanded");
+        if(!$(".search-input").hasClass("d-none")){
+                    $(".search-input").css("width", "auto");
+                    $(".search-input").focus();
+        }
+        else{
+          $(this).blur();
+        }
+      });
+            $(".read-more").click(function(){
+        $(this).toggleClass("read-more");
+        if($(this).hasClass("read-more")){
+          $(this).text("Read more...");
+        }
+        else{
+          $(this).text("Read less...");
+        }
+      });
+                              var rating = 0;
+      $("a", ".plugin").click(function(event){
+        event.preventDefault();
+        var url = $(this).prop("href");
+        window.open(url, "_blank");
+      });
+      $("span", ".rating").mouseenter(function(){
+        $(this).nextAll().removeClass("fas").addClass("far text-secondary");
+        $(this).prevAll().addBack().removeClass("far text-secondary").addClass("fas rate");
+      });
+      $(".rating").mouseleave(function(){
+        $(".rated").removeClass("far text-secondary").addClass("fas");
+        $("span", ".rating").not(".rated").removeClass("fas rate").addClass("far text-secondary");
+      });
+                        $(".list").click(function(event){
+        sessionStorage.setItem('list', '1');
+      });
+      $("span", ".rating").click(function(){
+        sessionStorage.setItem('rate', $(this).data("rating"));
+      });
+          });
+        </script>
+  </body>
+</html>
+

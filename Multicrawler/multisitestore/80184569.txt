@@ -1,0 +1,440 @@
+    <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112286258-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112286258-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Mexican superstar actress Kate del Castillo reveals the untold story of her encounter with El Chapo Guzmán, the world’s most-wanted drug lord.">
+    <meta property="fb:app_id" content="1606326079643623">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The Day I Met El Chapo (2017) - Netflix | Flixable">
+    <meta property="og:description" content="Mexican superstar actress Kate del Castillo reveals the untold story of her encounter with El Chapo Guzmán, the world’s most-wanted drug lord.">
+    <meta property="og:url" content="https://flixable.com/title/80184569/">
+    <meta property="og:image" content="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABVaUHJxreV6GmUBGtmYFqi9Fy_8D6RxC-zMrRMoF_Dh9VtERh_3rPBcMMUc0GHDBz0W0tvFpl8MxQaohmyrLlBtKLyx7bsY6gEA7lFwovhu2hcpIsIRrdY7eR3tx7lMadYUtuUdoFg.jpg">
+
+    <link rel="icon" href="/favicon.png">
+
+    <title>The Day I Met El Chapo (2017) - Netflix | Flixable</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+        <link href="/style.css?ver=1.0.3" rel="stylesheet">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1706392859389035');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1706392859389035&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=1606326079643623';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Sign In</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <a href="https://www.facebook.com/v3.2/dialog/oauth?client_id=324240451429392&state=2902d8afbf6135d872e7ed0dfd134cff&response_type=code&sdk=php-sdk-5.7.0&redirect_uri=https%3A%2F%2Fflixable.com%2Fcallback.php&scope=email" class="btn btn-primary facebook-login-button"><span class="fab fa-facebook mr-2"></span><span class="font-weight-bold small text-uppercase">Continue With Facebook</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mr-lg-3" href="/"><img src="/images/logo.svg" style="height:28px; width:125px;"  alt="List of Movies and TV Shows on Netflix | Flixable"></a>
+
+      <div class="d-flex order-lg-1 ml-auto">
+        <form action="/" method="get" class="form-inline search-form">
+          <div class="input-group">
+            <input class="form-control d-none search-input typeahead" type="text" value="" name="s" placeholder="Title, person" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-danger search-button" type="submit"><span class="fas fa-search"></span></button>
+            </div>
+          </div>
+        </form>
+                <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link px-2" href="javascript:;" data-toggle="modal" data-target="#loginModal">Sign In</a>
+          </li>
+        </ul>
+              </div>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Browse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/popular/">Popular</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="/coming-soon/">Coming Soon</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="/leaving-netflix/">Leaving</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/netflix-originals/">Originals</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="/guides/">Guides</a>
+          </li>
+                            </ul>
+      </div>
+    </nav>
+
+                <div class="container">
+        <div class="row justify-content-center">
+             <div class="col-12 mt-4">
+               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+               <!-- Flixable - Responsive -->
+               <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7234786419871369"
+                 data-ad-slot="1479555091"
+                 data-ad-format="auto"></ins>
+               <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+             </div>
+           </div>      </div>
+              <main role="main">
+
+      <div class="container mt-4">
+              <div class="row mb-3">
+          <div class="col-12">
+            <h1 class="mb-3">
+              The Day I Met El Chapo<br>
+              <small class="text-muted">2017</small>
+            </h1>
+            <div id="social">
+  <div class="fb-like" data-href="" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://flixable.com/title/80184569/" data-via="FlixableCom">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <a href="https://www.netflix.com/title/80184569" target="_blank">
+              <img class="poster mb-4" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABad4YQUEq-ZgY2i7iahBCcOByMAQYZEuaoDFJp6csn-adTRGgXQW6wp9b30Acz43cwX5gi63X5NTp0AiynuYpXguOEi1nOLeHHYdO97pI-U9VOjC54HhqEeWyShqg_R5FlctRSBxug.jpg" alt="The Day I Met El Chapo (2017)">
+            </a>
+          </div>
+          <div class="col-md-8 mb-3">
+            <div class="mb-2 font-weight-bold">
+              <span>TV-MA</span><span class="mx-2">&middot;</span><span>1 Season</span><span class="mx-2">&middot;</span><span><a href="/genre/crime-tv-shows/">Crime TV Shows</a>, <a href="/genre/docuseries/">Docuseries</a>, <a href="/genre/international-tv-shows/">International TV Shows</a></span>            </div>
+            <div class="mb-3">
+              Mexican superstar actress Kate del Castillo reveals the untold story of her encounter with El Chapo Guzmán, the world’s most-wanted drug lord.            </div>
+                                    <div class="mb-2">
+              <span class="mr-2 font-weight-bold">Cast:</span><span><a href="/actor/?name=Kate+del+Castillo">Kate del Castillo</a></span>
+            </div>
+                                    <div class="mb-2">
+              <span class="tmdb-rating"><img class="tmdb-logo" src="/images/tmdb-blue.svg"><span>5.8/10</span></span>
+            </div>
+                                    <div class="mb-2 plugin">
+              <span class="imdbRatingPlugin" data-user="ur85188756" data-title="tt7334894" data-style="p1"><a href="https://www.imdb.com/title/tt7334894/?ref_=plg_rt_1"><img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt=" The Day I Met El Chapo: The Kate Del Castillo Story (2017) on IMDb" /></a></span>
+              <script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script>
+            </div>
+                        <div class="mb-2">
+              <span class="mr-2 font-weight-bold">Click to Rate:</span><span class="rating" data-toggle="modal" data-target="#loginModal""><span class="far fa-star text-secondary" data-rating="1"></span><span class="far fa-star text-secondary" data-rating="2"></span><span class="far fa-star text-secondary" data-rating="3"></span><span class="far fa-star text-secondary" data-rating="4"></span><span class="far fa-star text-secondary" data-rating="5"></span></span>
+            </div>
+            <div class="mb-4">
+              <span class="mr-2 font-weight-bold">
+              Added to Netflix:</span><span>October 20, 2017</span>
+            </div>
+            <div>
+              <a href="https://www.netflix.com/title/80184569" class="btn btn-primary" target="_blank"><span class="fas fa-play mr-2"></span><span class="font-weight-bold small text-uppercase">Watch on Netflix</span></a>
+              <a href="javascript:;" class="btn btn-outline-primary list mt-2 mt-sm-0" data-toggle="modal" data-target="#loginModal"><span class="fas fa-plus mr-2"></span><span class="font-weight-bold small text-uppercase my-list-span">My List</span></a>
+            </div>
+          </div>
+        </div>
+            <hr>
+    <div class="row">
+      <div class="col-12 mb-2">
+        <h2>Similar Titles</h2>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80066429/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABT8E_7YGcDVN0kH4L1MwYqtyC2YCixPpSpo5ewqVvs4AfbSRxepgMfbw1jxjt3EibNlt1NGySBwX5m-IRP5bnoQE1UjNBOX2J7puNYPdUiiPaHsHumg4kj3AO-mP_nK8ZCnXZaJReQ.jpg" alt="Ingobernable (2018)">
+                <div class="rating-container small"><span class="font-weight-bold">5.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Crime TV Shows</span>
+                  <span class="d-block font-weight-bold small">International TV Shows</span>
+                  <span class="d-block font-weight-bold small">Spanish-Language TV Shows</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80066429/">Ingobernable</a></strong><br>2018</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/70205672/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABYmC3Je9nynCvNkITZsw_Ox_RaqnkWpqdnRmJV_ekUkDrzIrCKWVtHhdeK31GkMuJqDbTq3FzQWIfJwFPgInjEX_Knra6FA77k_5CkyIEUBDcwD1Opbskpg6DO-_Leu5wUQh8BUFdg.jpg" alt="La Reina del Sur (2011)">
+                <div class="rating-container small"><span class="font-weight-bold">6.5</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Crime TV Shows</span>
+                  <span class="d-block font-weight-bold small">International TV Shows</span>
+                  <span class="d-block font-weight-bold small">Spanish-Language TV Shows</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/70205672/">La Reina del Sur</a></strong><br>2011</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80081366/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABU2VuZyOIUaHOFJU-a8H2CxnyRp4khrPGcmJk3_pOIClZpNj3uYv9IQB43OmVJEnKyw1-54u6f7bzv2xyjwexN1KGDEPheO6l10KH-ze-3xVCqDxIg11YbS2vyNUwIu6an6Ut-3RrA.jpg" alt="Desierto (2015)">
+                <div class="rating-container small"><span class="font-weight-bold">5.9</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Action & Adventure</span>
+                  <span class="d-block font-weight-bold small">International Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80081366/">Desierto</a></strong><br>2015</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80133042/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABX4vdrCjTSr9bkQKxhkKI3Uexrb4dq51PWsf437BZ1ZerPUxDZdaW6A7S_9O6sunSBX_0Qrob0pWDnLJwrPYVzeLIbKqOR7xwh8C7dMhvB2QNxiNNVddrZAqedPM3WbERn7PW8h-QQ.jpg" alt="El Chapo (2018)">
+                <div class="rating-container small"><span class="font-weight-bold">7.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Crime TV Shows</span>
+                  <span class="d-block font-weight-bold small">Spanish-Language TV Shows</span>
+                  <span class="d-block font-weight-bold small">TV Action & Adventure</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80133042/">El Chapo</a></strong><br>2018</p>
+  </div>
+    </div>
+      <hr>
+  <div class="row">
+    <div class="col-12 mb-2">
+      <h2>Recently Viewed</h2>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80159877/">
+        <img class="poster" src="https://occ-0-2705-2706.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABV0Hdkf8omApQwX0WRPrG1hSmpjMG7iWNJqjXbF4GZJGL96pyWfGPku24Eqs5w6geY-UB70jlqKVG_xDaPwKptfCzX-NlYo_OmSSEpMFVlwPetAelr-a0GkPN5gqcrriU5Vqbne29Q.jpg" alt="Alone in Berlin (2016)">
+                <div class="rating-container small"><span class="font-weight-bold">6.5</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Dramas</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80159877/">Alone in Berlin</a></strong><br>2016</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/70141644/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABTUPsR96grYE6Qb1QdPncb14F5p_hmgUNRCoysGT9TD6nFg7T1Vp-h6QIbY0IT41G2YHaAxZSkCWdsyRKyzePc9z6Zqn8c1UiTBiHhuUuJABU2I4rOPGLMfaAElq71wbP3axObDCxg.jpg" alt="Mad Ron's Prevues from Hell (1987)">
+                <div class="rating-container small"><span class="font-weight-bold">5.3</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Cult Movies</span>
+                  <span class="d-block font-weight-bold small">Horror Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/70141644/">Mad Ron's Prevues from Hell</a></strong><br>1987</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/81045551/">
+        <img class="poster" src="https://occ-0-2705-2706.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABRd28WPzMyRL3NJN8K3GXPv-B-H9TiLGV0fAJaA0Qtu1EljlZyDR831J0Bu-1ZU0G_83Toz6KZjgbe3Tk4N_j2QQyAbMVTPqntgtSJFv9qMFJ_zaJpocien7WsDjyKZmZ6fI19helA.jpg" alt="The 43 (2019)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Crime TV Shows</span>
+                  <span class="d-block font-weight-bold small">Docuseries</span>
+                  <span class="d-block font-weight-bold small">International TV Shows</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/81045551/">The 43</a></strong><br>2019</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80105514/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABQjNSXmkSN2VHlXBFfkjlWgEhdGKojJkoUdUPOZq0yzjDaBB_TZQdZJfDmQQjOmLx_DOQPI51Y7IfKSnjFfJrEiu7_f41N0D7Yd3YvMtBYJD2sJ9qpcFx9BZyDsxidxcn664PUo5jQ.jpg" alt="Accidental Courtesy (2016)">
+                <div class="rating-container small"><span class="font-weight-bold">7.8</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Documentaries</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80105514/">Accidental Courtesy</a></strong><br>2016</p>
+  </div>
+  </div>
+            <div class="row justify-content-center">
+             <div class="col-12 my-2">
+               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+               <!-- Flixable - Responsive -->
+               <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7234786419871369"
+                 data-ad-slot="1479555091"
+                 data-ad-format="auto"></ins>
+               <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+             </div>
+           </div>        <hr>
+      </div> <!-- /container -->
+
+    </main>
+    <footer class="container">
+      <div class="row mb-3">
+        <div class="col-4">&copy; 2019 <a href="/">Flixable</a></div>
+        <div class="col-8 text-right">
+          <a href="/about/">About Us</a>
+          <span class="mx-1">|</span>
+          <a href="/contact/">Contact Us</a>
+          <span class="mx-1">|</span>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <span class="mx-1">|</span>
+          <a href="/countries/">Other Countries</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
+        <script src="/typeahead.bundle.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      var titles = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.whitespace,
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        remote: {
+          url: '/search.php?country=us&query=%QUERY',
+          wildcard: '%QUERY'
+        }
+      });
+      $("input.typeahead").typeahead(null, {
+        name: 'search',
+        display: 'title',
+        source: titles,
+        templates: {
+          suggestion: function(data){
+            return '<a href="/title/' + data.id + '/">' + data.title + '</a>';
+          }
+        }
+      });
+      $(window).on("hashchange", function(){
+        if(location.hash === '#submitContainer'){
+          window.scrollBy(0, -10);
+        }
+        else if(location.hash === '#filterContainer'){
+          window.scrollBy(0, -63);
+        }
+      }).trigger("hashchange");
+      var pathname = window.location.pathname;
+      $(".navbar-nav > li > a[href=\"" + pathname + "\"]").parent().addClass("active");
+      $(document).click(function(event){
+        if(event.isTrigger){
+          return;
+        }
+        if(!$(".search-form").is(event.target) && $(".search-form").has(event.target).length == 0 && !$(".search-input").hasClass("d-none")){
+          $(".search-button").click();
+        }
+        if(!$(".navbar").is(event.target) && ($(".navbar").has(event.target).length == 0 || $(".search-form").has(event.target).length > 0) && $(".navbar-collapse").hasClass("collapse show")){
+          $(".navbar-toggler").click();
+        }
+      });
+      $(".search-button").click(function(event){
+        if(event.isTrigger || $(".search-input").hasClass("d-none") || $(".tt-input").val() == ''){
+          event.preventDefault();
+        }
+        else{
+          return;
+        }
+        $(".search-input").toggleClass("d-none");
+        $(".search-button").toggleClass("search-button-expanded");
+        if(!$(".search-input").hasClass("d-none")){
+                    $(".search-input").css("width", "auto");
+                    $(".search-input").focus();
+        }
+        else{
+          $(this).blur();
+        }
+      });
+            $(".read-more").click(function(){
+        $(this).toggleClass("read-more");
+        if($(this).hasClass("read-more")){
+          $(this).text("Read more...");
+        }
+        else{
+          $(this).text("Read less...");
+        }
+      });
+                              var rating = 0;
+      $("a", ".plugin").click(function(event){
+        event.preventDefault();
+        var url = $(this).prop("href");
+        window.open(url, "_blank");
+      });
+      $("span", ".rating").mouseenter(function(){
+        $(this).nextAll().removeClass("fas").addClass("far text-secondary");
+        $(this).prevAll().addBack().removeClass("far text-secondary").addClass("fas rate");
+      });
+      $(".rating").mouseleave(function(){
+        $(".rated").removeClass("far text-secondary").addClass("fas");
+        $("span", ".rating").not(".rated").removeClass("fas rate").addClass("far text-secondary");
+      });
+                        $(".list").click(function(event){
+        sessionStorage.setItem('list', '1');
+      });
+      $("span", ".rating").click(function(){
+        sessionStorage.setItem('rate', $(this).data("rating"));
+      });
+          });
+        </script>
+  </body>
+</html>
+

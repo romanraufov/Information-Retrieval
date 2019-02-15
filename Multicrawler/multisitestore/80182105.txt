@@ -1,0 +1,442 @@
+    <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112286258-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112286258-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="This documentary profiles the celebrated Hindi film director known as much for his embrace of leftist politics and social concerns as lyrical cinema.">
+    <meta property="fb:app_id" content="1606326079643623">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Saeed Mirza: The Leftist Sufi (2016) - Netflix | Flixable">
+    <meta property="og:description" content="This documentary profiles the celebrated Hindi film director known as much for his embrace of leftist politics and social concerns as lyrical cinema.">
+    <meta property="og:url" content="https://flixable.com/title/80182105/">
+    <meta property="og:image" content="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABRK60LzXmFDBt-VC_cjKlXDFRNvu0ed23AGG-fu__wGcysxDgT87f3Px7PMuLgHEE0d_faqaQBpyhGoxOa4vz9Ikng_x7UWEN3Z_WxshXI2Y8e4WQHEODPIfUwlIZlLMvc2R1gzj1Q.jpg">
+
+    <link rel="icon" href="/favicon.png">
+
+    <title>Saeed Mirza: The Leftist Sufi (2016) - Netflix | Flixable</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+        <link href="/style.css?ver=1.0.3" rel="stylesheet">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1706392859389035');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1706392859389035&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=1606326079643623';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Sign In</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <a href="https://www.facebook.com/v3.2/dialog/oauth?client_id=324240451429392&state=23792afefbdb3d587cffbfdf4771b752&response_type=code&sdk=php-sdk-5.7.0&redirect_uri=https%3A%2F%2Fflixable.com%2Fcallback.php&scope=email" class="btn btn-primary facebook-login-button"><span class="fab fa-facebook mr-2"></span><span class="font-weight-bold small text-uppercase">Continue With Facebook</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mr-lg-3" href="/"><img src="/images/logo.svg" style="height:28px; width:125px;"  alt="List of Movies and TV Shows on Netflix | Flixable"></a>
+
+      <div class="d-flex order-lg-1 ml-auto">
+        <form action="/" method="get" class="form-inline search-form">
+          <div class="input-group">
+            <input class="form-control d-none search-input typeahead" type="text" value="" name="s" placeholder="Title, person" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-danger search-button" type="submit"><span class="fas fa-search"></span></button>
+            </div>
+          </div>
+        </form>
+                <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link px-2" href="javascript:;" data-toggle="modal" data-target="#loginModal">Sign In</a>
+          </li>
+        </ul>
+              </div>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Browse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/popular/">Popular</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="/coming-soon/">Coming Soon</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="/leaving-netflix/">Leaving</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/netflix-originals/">Originals</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="/guides/">Guides</a>
+          </li>
+                            </ul>
+      </div>
+    </nav>
+
+                <div class="container">
+        <div class="row justify-content-center">
+             <div class="col-12 mt-4">
+               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+               <!-- Flixable - Responsive -->
+               <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7234786419871369"
+                 data-ad-slot="1479555091"
+                 data-ad-format="auto"></ins>
+               <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+             </div>
+           </div>      </div>
+              <main role="main">
+
+      <div class="container mt-4">
+              <div class="row mb-3">
+          <div class="col-12">
+            <h1 class="mb-3">
+              Saeed Mirza: The Leftist Sufi<br>
+              <small class="text-muted">2016</small>
+            </h1>
+            <div id="social">
+  <div class="fb-like" data-href="" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://flixable.com/title/80182105/" data-via="FlixableCom">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <a href="https://www.netflix.com/title/80182105" target="_blank">
+              <img class="poster mb-4" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABVkps8LhwRZ8IZTJzFt6AVIY1wOA9YqhLs2S-yy3rmWfXcL97LPhAR9hE49dQHkwQSHkhaa73XfTGmS2jtgukLOaEjZ9zkEh3jfu8VCpJTR3dw2mcISNwe5OseKu3FmONVparpClAQ.jpg" alt="Saeed Mirza: The Leftist Sufi (2016)">
+            </a>
+          </div>
+          <div class="col-md-8 mb-3">
+            <div class="mb-2 font-weight-bold">
+              <span>TV-MA</span><span class="mx-2">&middot;</span><span>61 min</span><span class="mx-2">&middot;</span><span><a href="/genre/documentaries/">Documentaries</a>, <a href="/genre/international-movies/">International Movies</a></span>            </div>
+            <div class="mb-3">
+              This documentary profiles the celebrated Hindi film director known as much for his embrace of leftist politics and social concerns as lyrical cinema.            </div>
+                        <div class="mb-2">
+              <span class="mr-2 font-weight-bold">Director:</span><span><a href="/director/?name=Kireet+Khurana">Kireet Khurana</a>, <a href="/director/?name=Padmakumar+Narasimhamurthy">Padmakumar Narasimhamurthy</a></span>
+            </div>
+                                    <div class="mb-2">
+              <span class="mr-2 font-weight-bold">Cast:</span><span><a href="/actor/?name=Saeed+Akhtar+Mirza">Saeed Akhtar Mirza</a></span>
+            </div>
+                                    <div class="mb-2">
+              <span class="tmdb-rating"><img class="tmdb-logo" src="/images/tmdb-blue.svg"><span>8.7/10</span></span>
+            </div>
+                                    <div class="mb-2 plugin">
+              <span class="imdbRatingPlugin" data-user="ur85188756" data-title="tt6741178" data-style="p1"><a href="https://www.imdb.com/title/tt6741178/?ref_=plg_rt_1"><img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt=" Saeed Mirza: The Leftist Sufi (2016) on IMDb" /></a></span>
+              <script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script>
+            </div>
+                        <div class="mb-2">
+              <span class="mr-2 font-weight-bold">Click to Rate:</span><span class="rating" data-toggle="modal" data-target="#loginModal""><span class="far fa-star text-secondary" data-rating="1"></span><span class="far fa-star text-secondary" data-rating="2"></span><span class="far fa-star text-secondary" data-rating="3"></span><span class="far fa-star text-secondary" data-rating="4"></span><span class="far fa-star text-secondary" data-rating="5"></span></span>
+            </div>
+            <div class="mb-4">
+              <span class="mr-2 font-weight-bold">
+              Added to Netflix:</span><span>May 1, 2017</span>
+            </div>
+            <div>
+              <a href="https://www.netflix.com/title/80182105" class="btn btn-primary" target="_blank"><span class="fas fa-play mr-2"></span><span class="font-weight-bold small text-uppercase">Watch on Netflix</span></a>
+              <a href="javascript:;" class="btn btn-outline-primary list mt-2 mt-sm-0" data-toggle="modal" data-target="#loginModal"><span class="fas fa-plus mr-2"></span><span class="font-weight-bold small text-uppercase my-list-span">My List</span></a>
+            </div>
+          </div>
+        </div>
+            <hr>
+    <div class="row">
+      <div class="col-12 mb-2">
+        <h2>Similar Titles</h2>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80158376/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABXhAYyMAIlx_RfCytHrjUbfvVDwXNuuPFLZhzFSYbqs90l4ZOQzwzXWQZUP_047ill3zJEy_znpRaNMMr-ZwbSexUoS2RRBG4pMUbY8LwSOWYhARPraANn2ZNjRvG-WNFFeza9pjEQ.jpg" alt="An American in Madras (2013)">
+                <div class="rating-container small"><span class="font-weight-bold">7.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Documentaries</span>
+                  <span class="d-block font-weight-bold small">International Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80158376/">An American in Madras</a></strong><br>2013</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/70153404/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABYS8oug0FCrsCsFIKnECs3ajHsZaUpbtYAmKEoUZS6P39-r4iuSPAQUkzSlkEWno6byqxP1PEMLvJDwT3X-IH2MvUBG7pBOKT_WeXkDgQbv7x8rU4cxruCPmFRcSWqd4zH22O0-etQ.jpg" alt="Friends (2003)">
+                <div class="rating-container small"><span class="font-weight-bold">7.8</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Classic & Cult TV</span>
+                  <span class="d-block font-weight-bold small">TV Comedies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/70153404/">Friends</a></strong><br>2003</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/70303425/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABV-6-31W8-fe2ogoy6GkadFvYkvChGkF2RusRauzwCf-10UMZBPnG-Uniyrmu8eccYqbGyTd7wk_LijHci92ZHonItWgAV383XvHudf2cPIWQaaaE7vh9rmk4Y32vxB1AiTjCfFpZQ.jpg" alt="Filmistaan (2012)">
+                <div class="rating-container small"><span class="font-weight-bold">6.6</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Comedies</span>
+                  <span class="d-block font-weight-bold small">Dramas</span>
+                  <span class="d-block font-weight-bold small">Independent Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/70303425/">Filmistaan</a></strong><br>2012</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80060060/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABTRHmFS7j30qO7saW0gZJBLe9VIDJqOQ87l3wCbt0n6b9rOYVzLvsBpO41e54MUAtGk0n6NeJxW9QH5nUpLYzfGb7Ji0bBgb0d1X8TYuKGhRsFN2DNkqSBi-Ws_oAKmmBLXtjBsg8g.jpg" alt="Chauthi Koot (2015)">
+                <div class="rating-container small"><span class="font-weight-bold">7.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Dramas</span>
+                  <span class="d-block font-weight-bold small">Independent Movies</span>
+                  <span class="d-block font-weight-bold small">International Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80060060/">Chauthi Koot</a></strong><br>2015</p>
+  </div>
+    </div>
+      <hr>
+  <div class="row">
+    <div class="col-12 mb-2">
+      <h2>Recently Viewed</h2>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80159877/">
+        <img class="poster" src="https://occ-0-2705-2706.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABV0Hdkf8omApQwX0WRPrG1hSmpjMG7iWNJqjXbF4GZJGL96pyWfGPku24Eqs5w6geY-UB70jlqKVG_xDaPwKptfCzX-NlYo_OmSSEpMFVlwPetAelr-a0GkPN5gqcrriU5Vqbne29Q.jpg" alt="Alone in Berlin (2016)">
+                <div class="rating-container small"><span class="font-weight-bold">6.5</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Dramas</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80159877/">Alone in Berlin</a></strong><br>2016</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/70141644/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABTUPsR96grYE6Qb1QdPncb14F5p_hmgUNRCoysGT9TD6nFg7T1Vp-h6QIbY0IT41G2YHaAxZSkCWdsyRKyzePc9z6Zqn8c1UiTBiHhuUuJABU2I4rOPGLMfaAElq71wbP3axObDCxg.jpg" alt="Mad Ron's Prevues from Hell (1987)">
+                <div class="rating-container small"><span class="font-weight-bold">5.3</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Cult Movies</span>
+                  <span class="d-block font-weight-bold small">Horror Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/70141644/">Mad Ron's Prevues from Hell</a></strong><br>1987</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/81045551/">
+        <img class="poster" src="https://occ-0-2705-2706.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABRd28WPzMyRL3NJN8K3GXPv-B-H9TiLGV0fAJaA0Qtu1EljlZyDR831J0Bu-1ZU0G_83Toz6KZjgbe3Tk4N_j2QQyAbMVTPqntgtSJFv9qMFJ_zaJpocien7WsDjyKZmZ6fI19helA.jpg" alt="The 43 (2019)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Crime TV Shows</span>
+                  <span class="d-block font-weight-bold small">Docuseries</span>
+                  <span class="d-block font-weight-bold small">International TV Shows</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/81045551/">The 43</a></strong><br>2019</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="/title/80105514/">
+        <img class="poster" src="https://occ-0-999-448.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABQjNSXmkSN2VHlXBFfkjlWgEhdGKojJkoUdUPOZq0yzjDaBB_TZQdZJfDmQQjOmLx_DOQPI51Y7IfKSnjFfJrEiu7_f41N0D7Yd3YvMtBYJD2sJ9qpcFx9BZyDsxidxcn664PUo5jQ.jpg" alt="Accidental Courtesy (2016)">
+                <div class="rating-container small"><span class="font-weight-bold">7.8</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Documentaries</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="/title/80105514/">Accidental Courtesy</a></strong><br>2016</p>
+  </div>
+  </div>
+            <div class="row justify-content-center">
+             <div class="col-12 my-2">
+               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+               <!-- Flixable - Responsive -->
+               <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7234786419871369"
+                 data-ad-slot="1479555091"
+                 data-ad-format="auto"></ins>
+               <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+             </div>
+           </div>        <hr>
+      </div> <!-- /container -->
+
+    </main>
+    <footer class="container">
+      <div class="row mb-3">
+        <div class="col-4">&copy; 2019 <a href="/">Flixable</a></div>
+        <div class="col-8 text-right">
+          <a href="/about/">About Us</a>
+          <span class="mx-1">|</span>
+          <a href="/contact/">Contact Us</a>
+          <span class="mx-1">|</span>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <span class="mx-1">|</span>
+          <a href="/countries/">Other Countries</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
+        <script src="/typeahead.bundle.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      var titles = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.whitespace,
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        remote: {
+          url: '/search.php?country=us&query=%QUERY',
+          wildcard: '%QUERY'
+        }
+      });
+      $("input.typeahead").typeahead(null, {
+        name: 'search',
+        display: 'title',
+        source: titles,
+        templates: {
+          suggestion: function(data){
+            return '<a href="/title/' + data.id + '/">' + data.title + '</a>';
+          }
+        }
+      });
+      $(window).on("hashchange", function(){
+        if(location.hash === '#submitContainer'){
+          window.scrollBy(0, -10);
+        }
+        else if(location.hash === '#filterContainer'){
+          window.scrollBy(0, -63);
+        }
+      }).trigger("hashchange");
+      var pathname = window.location.pathname;
+      $(".navbar-nav > li > a[href=\"" + pathname + "\"]").parent().addClass("active");
+      $(document).click(function(event){
+        if(event.isTrigger){
+          return;
+        }
+        if(!$(".search-form").is(event.target) && $(".search-form").has(event.target).length == 0 && !$(".search-input").hasClass("d-none")){
+          $(".search-button").click();
+        }
+        if(!$(".navbar").is(event.target) && ($(".navbar").has(event.target).length == 0 || $(".search-form").has(event.target).length > 0) && $(".navbar-collapse").hasClass("collapse show")){
+          $(".navbar-toggler").click();
+        }
+      });
+      $(".search-button").click(function(event){
+        if(event.isTrigger || $(".search-input").hasClass("d-none") || $(".tt-input").val() == ''){
+          event.preventDefault();
+        }
+        else{
+          return;
+        }
+        $(".search-input").toggleClass("d-none");
+        $(".search-button").toggleClass("search-button-expanded");
+        if(!$(".search-input").hasClass("d-none")){
+                    $(".search-input").css("width", "auto");
+                    $(".search-input").focus();
+        }
+        else{
+          $(this).blur();
+        }
+      });
+            $(".read-more").click(function(){
+        $(this).toggleClass("read-more");
+        if($(this).hasClass("read-more")){
+          $(this).text("Read more...");
+        }
+        else{
+          $(this).text("Read less...");
+        }
+      });
+                              var rating = 0;
+      $("a", ".plugin").click(function(event){
+        event.preventDefault();
+        var url = $(this).prop("href");
+        window.open(url, "_blank");
+      });
+      $("span", ".rating").mouseenter(function(){
+        $(this).nextAll().removeClass("fas").addClass("far text-secondary");
+        $(this).prevAll().addBack().removeClass("far text-secondary").addClass("fas rate");
+      });
+      $(".rating").mouseleave(function(){
+        $(".rated").removeClass("far text-secondary").addClass("fas");
+        $("span", ".rating").not(".rated").removeClass("fas rate").addClass("far text-secondary");
+      });
+                        $(".list").click(function(event){
+        sessionStorage.setItem('list', '1');
+      });
+      $("span", ".rating").click(function(){
+        sessionStorage.setItem('rate', $(this).data("rating"));
+      });
+          });
+        </script>
+  </body>
+</html>
+
