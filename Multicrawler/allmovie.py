@@ -10,7 +10,7 @@ import sys
 
 #Global variables
 target_folder = os.getcwd()+'\\allmovie'
-base_url = 'https://www.allmovie.com/movie/'
+base_url = 'https://www.allmovie.com/'
 
 to_do_file = 'allmovie_to_do.txt'
 done_file = 'allmovie_done.txt'
@@ -80,7 +80,13 @@ def get_movie_links(page):
 	soup = BeautifulSoup(page, 'html.parser')
 	links = [a['href'] for a in soup.findAll('a', href=True)]
 	movielinks = [base_url+re.split('\?|\/',link)[2] for link in links if link.startswith('/movie')]
+	movielinks.extend([base_url + link[1:] for link in links if link.startswith('/genre')])
 	return movielinks
+
+# checks pages that are important for retrieving links, but must not be saved themselves
+def checkURL(RotTomURL):
+	reviewURL = "www.allmovie.com/movie"
+	return True if reviewURL in RotTomURL else False
 	
 def crawl(pages_to_collect, process_id, access_lock, num_procs):
 	urls = list() # Pages to crawl
@@ -102,15 +108,16 @@ def crawl(pages_to_collect, process_id, access_lock, num_procs):
 		print("access lock released by process "+process_id)
 		
 		#Crawling phase
-		try:
-			for url in urls:
-				page = get_page(url)
+		
+		for url in urls:
+			page = get_page(url)
+			if checkURL(url):
 				store(page,url)
-				movie_links = get_movie_links(page)
-				local_links.extend(movie_links)
-				print(url, 'succesfully stored by process ', str(process_id))
-		except:
-			print('failed for url '+url+' by process '+str(process_id))		
+			movie_links = get_movie_links(page)
+			local_links.extend(movie_links)
+			print(url, 'succesfully stored by process ', str(process_id))
+		# except:
+		# 	print('failed for url '+url+' by process '+str(process_id))		
 		sleep(1*num_procs)
 
 	
