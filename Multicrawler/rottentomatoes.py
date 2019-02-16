@@ -81,8 +81,7 @@ def get_movie_links(page):
 	soup = BeautifulSoup(page, 'html.parser')
 	links = [a['href'] for a in soup.findAll('a', href=True)]
 	movielinks = [base_url+re.split('\?|\/',link)[2] for link in links if link.startswith("/m/")]
-	#movielinks.extend([link for link in links if "rottentomatoes.com/m/" in link])
-	#movielinks.extend(["https://www.rottentomatoes.com" + link for link in links if "/top/" in link])
+	movielinks.extend(["https://www.rottentomatoes.com" + link for link in links if "/top/" in link])
 	return movielinks
 	
 def crawl(pages_to_collect, process_id, access_lock, num_procs):
