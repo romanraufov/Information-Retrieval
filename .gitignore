@@ -1,1 +1,5 @@
 *.txt
+Multicrawler/allmovie/*
+Multicrawler/flixable/*
+Multicrawler/imdb/*
+Multicrawler/rottentomatoes/*
