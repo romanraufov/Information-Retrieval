@@ -83,6 +83,11 @@ def get_movie_links(page):
 	movielinks = [base_url+re.split('\?|\/',link)[2] for link in links if link.startswith("/m/")]
 	movielinks.extend(["https://www.rottentomatoes.com" + link for link in links if "/top/" in link])
 	return movielinks
+
+# checks pages that are important for retrieving links, but must not be saved themselves
+def checkURL(RotTomURL):
+	reviewURL = "www.rottentomatoes.com/top"
+	return True if reviewURL not in RotTomURL else False
 	
 def crawl(pages_to_collect, process_id, access_lock, num_procs):
 	urls = list() # Pages to crawl
@@ -107,7 +112,8 @@ def crawl(pages_to_collect, process_id, access_lock, num_procs):
 		try:
 			for url in urls:
 				page = get_page(url)
-				store(page,url)
+				if checkURL(url):
+					store(page,url)
 				movie_links = get_movie_links(page)
 				local_links.extend(movie_links)
 				print(url, 'succesfully stored by process ', str(process_id))
