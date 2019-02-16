@@ -92,8 +92,11 @@ def get_movie_links(page, url):
 	elif 'flixable' in url:
 		return ['https://flixable.com/title/'+re.split('\?|\/',link)[2] for link in links if link.startswith('/title')]
 	elif 'rottentomatoes' in url:
-		return ['https://www.rottentomatoes.com/m/'+re.split('\?|\/',link)[2] for link in links if link.startswith("/m/")]
-	
+		RotTomlinks = ["https://www.rottentomatoes.com" + link for link in links if "/top/" in link]
+		RotTomlinks = RotTomlinks.extend(['https://www.rottentomatoes.com/m/'+re.split('\?|\/',link)[2] for link in links if link.startswith("/m/")])
+		print("found url: ", RotTomlinks)
+		return RotTomlinks
+		
 def crawl(pages_to_collect, process_id, access_lock, num_procs):
 	urls = list() # Pages to crawl
 	local_links = list() # Links retrieved by the crawler. Will be pushed to the shared to_do stack
