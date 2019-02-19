@@ -24,9 +24,12 @@ path="C:\\Users\\flori\\OneDrive\\Documenten\\Information Retrieval\\allmovie\\*
 files = glob.glob(path)
 titlelist=[]
 summarylist=[]
+counter = 0
 for file in files:
+	counter += 1
+	print(counter)
 	myfile=open(file, 'r',encoding="utf8")
-	data=myfile.read().replace('\n', ' ').replace('\t', ' ')
+	data=myfile.read().replace('\n', ' ').replace('\t', ' ').replace(';',',') # Excel splits columns on ; by default, so this prevents that
 	data = re.sub('\s+', ' ', data).strip() #replace sequences of spaces by single space
 	data = html.unescape(data) #Decode html encoding
 	title = re.search('<meta name="title" content="(.*) - ', data).group(1)
@@ -38,7 +41,7 @@ for file in files:
 		if summary is None:
 			summarylist.append('')
 		else:
-			summary=summary.group(1)
+			summary=summary.group(1).split('Characteristics')[0].strip() #Remove trailing non-summary text
 			summarylist.append(summary)
 
 
@@ -75,7 +78,7 @@ for line in titlelist:
 sep = '('
 titlelistclean=[]
 for x in titlelist:
-	rest = x.split(sep, 1)[0].split(' -  |')[0].strip()
+	rest = x.split(sep, 1)[0].split(' - |')[0].strip()
 	titlelistclean.append(rest)
 
     
