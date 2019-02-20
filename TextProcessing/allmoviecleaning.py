@@ -1,14 +1,12 @@
 
 # coding: utf-8
 
-# In[430]:
-
-
 import pandas as pd
 import numpy as np 
 import matplotlib as plt
 import seaborn as sns
 import glob , numpy
+import os
 import os.path
 import re
 import html
@@ -16,11 +14,10 @@ import html
 #breek op elke comment, dus code tussen comments in een aparte cell. 
 
 
-# In[456]:
-
-
+base_path = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\Multicrawler"
 #hier path naar txt files
-path="C:\\Users\\flori\\OneDrive\\Documenten\\Information Retrieval\\allmovie\\*.txt"
+path= base_path + "\\allmovie\\*.txt"
+
 files = glob.glob(path)
 titlelist=[]
 summarylist=[]
@@ -44,21 +41,11 @@ for file in files:
 			summary=summary.group(1).split('Characteristics')[0].strip() #Remove trailing non-summary text
 			summarylist.append(summary)
 
-
-# In[432]:
-
-
 #Need to clean summaries, this is as clean as it gets. Still need normalize and stem ofc
 summaryclean=[]
 for my_str in summarylist:
 	rest=re.sub('<.*?>', '', my_str)
 	summaryclean.append(rest)
-
-
-
-
-# In[434]:
-
 
 #extract year for a column in df
 yearlist=[]
@@ -70,10 +57,6 @@ for line in titlelist:
 		title=title.group(1)
 		yearlist.append(title)
 
-
-# In[435]:
-
-
 #Clean the title for the dataframe
 sep = '('
 titlelistclean=[]
@@ -81,15 +64,9 @@ for x in titlelist:
 	rest = x.split(sep, 1)[0].split(' - |')[0].strip()
 	titlelistclean.append(rest)
 
-    
-
-
-# In[436]:
-
+  
 data = pd.DataFrame({'title': titlelistclean, 'summary': summaryclean,"year":yearlist})
-
-# In[344]:
 
 
 data.to_csv("flixable.csv", encoding='cp1252', index=False)
-
+print("Allmovie files have been cleaned")
