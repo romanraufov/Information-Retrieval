@@ -1,8 +1,8 @@
 
 # coding: utf-8
 
+import numpy as np
 import pandas as pd
-import numpy as np 
 import matplotlib as plt
 import seaborn as sns
 import glob , numpy
@@ -11,6 +11,7 @@ import os.path
 import re
 import html
 import csv
+import math
 
 from bs4 import BeautifulSoup
 #let op, als het niet werkt start dit in de anaconda notebook
@@ -22,19 +23,21 @@ base_path = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\Multicrawler"
 
 
 #Debugging
-path= base_path + "\\rottentomatoes\\*.txt"
+#path= base_path + "\\rottentomatoes\\*.txt"
 
 #all files
-#path = "C:\\Users\\chris\\OneDrive\\Documenten\\DataScience\\InformationRetrieval\\ScrapedSites\\RottenTomatoes\\*.txt"
+path = "C:\\Users\\chris\\OneDrive\\Documenten\\DataScience\\InformationRetrieval\\ScrapedSites\\RottenTomatoes\\*.txt"
 
 files = glob.glob(path)
-print(files)
+#print(files)
 
 
 titlelist=[]
 summarylist=[]
 yearlist = []
 counter = 0
+totalFileCount = len(files)
+print("starting up cleaning process..")
 for file in files:
 	counter += 1
 	myfile=open(file, 'r',encoding="utf8")
@@ -43,7 +46,10 @@ for file in files:
 	metaTag = soup.find("meta", property="og:title")['content']
 	title = metaTag[:-7]
 	year = metaTag[-5:-1]
-	summary = soup.find("meta", property="og:description")['content']
+	try:
+		summary = soup.find("meta", property="og:description")['content']
+	except:
+		summary = ""
 
 	#print(title, ":  ", summary)
 
@@ -60,8 +66,8 @@ for file in files:
 		else:
 			yearlist.append(year)
 
-	if counter == 20:
-		break
+	if counter % int(totalFileCount/20) == 0:
+		print("Cleaning data at {}%".format((math.ceil((counter/totalFileCount)*100))))
 
 #print("titlelist: ", titlelist)
 #print("summarylist: ", summarylist)
