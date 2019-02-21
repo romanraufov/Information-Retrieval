@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import math
 
+
 # Local Imports
 import IndexerFunctions as IF
 
@@ -94,5 +95,4 @@ batchIndexAll = Indexer(IndexBatchAll)
 IndexDictionary = mergeBatchInMainIndex(IndexDictionary, batchIndexAll)
 IndexDictionary["small"]
 
-
-
+IF.saveDict(IndexDictionary, "testIndex", ".pkl")

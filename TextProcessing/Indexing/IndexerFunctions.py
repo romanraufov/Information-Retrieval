@@ -6,6 +6,9 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords 
 from nltk.tokenize import word_tokenize 
 from collections import Counter
+import datetime
+import pickle
+import os  
 
 # function return pointerName
 def getKeyName(title, year):
@@ -77,6 +80,25 @@ def updateWeightsTerm(batchDict, term):
     #TODO:implement weight
     #batchDict[term][weights] = 
     return batchDict
+
+
+# Utilities
+def saveDict(obj, name, ext):
+    filePath = legitFilePath('./SavedIndexes/'+ name, ext)
+    with open(filePath, 'wb') as f:
+        pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
+
+def legitFilePath(filename, ext):
+    dateStamp = datetime.datetime.today().strftime('%Y-%m-%d')
+    if not os.path.isfile(filename + "_" + dateStamp + ext):
+        return filename + "_" + dateStamp + ext
+    else:
+        counter = 1
+        while os.path.isfile(filename + "_" + dateStamp + "V" + str(counter) + ext):
+            counter +=1
+        print("saved as file: ", filename + "_" + dateStamp + "V" + str(counter) + ext)
+        return filename + "_" + dateStamp + "V" + str(counter) + ext
+
 
 
 
