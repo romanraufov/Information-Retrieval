@@ -28,6 +28,7 @@ def csv2DF(listofCsv):
 def Indexer(BatchDF):
     #execute function per row
     batchDict = {}
+    dfLength = len(BatchDF.index)
     for index, row in BatchDF.iterrows():
         #print("\n next title: ", row["title"])
         try: 
@@ -49,6 +50,9 @@ def Indexer(BatchDF):
         #print(listOfTerms)
         #print(intermediateDict)
         #print(batchDict["small"])
+        if index % int(dfLength/10) == 0:
+            print("Indexing rows at {}%".format((math.ceil((index/dfLength)*100))))
+    print("Indexing complete")
     return batchDict
 
 def mergeBatchInMainIndex(IndexDictionary, batchDict):
@@ -63,11 +67,6 @@ def mergeBatchInMainIndex(IndexDictionary, batchDict):
             IndexDictionary = IF.updateWeightsTerm(IndexDictionary, batchKey)
     print("batch has been merged to the main Index")
     return IndexDictionary
-
-
-
-mainPF = csv2DF(csvfiles)
-print(mainPF)
 
 # Testing in batches
 #IndexBatch1 = mainPF.iloc[:20]
@@ -90,6 +89,7 @@ print(mainPF)
 
 
 # Testing all
+mainPF = csv2DF(csvfiles)
 IndexBatchAll = mainPF
 batchIndexAll = Indexer(IndexBatchAll)
 IndexDictionary = mergeBatchInMainIndex(IndexDictionary, batchIndexAll)
