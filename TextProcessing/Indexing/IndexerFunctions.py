@@ -84,7 +84,7 @@ def updateWeightsTerm(batchDict, term):
 
 # Utilities
 def saveDict(obj, name, ext):
-    filePath = legitFilePath('./SavedIndexes/'+ name, ext)
+    filePath = legitFilePath(name, ext)
     with open(filePath, 'wb') as f:
         pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
 

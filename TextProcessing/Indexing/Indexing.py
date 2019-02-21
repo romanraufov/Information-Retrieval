@@ -95,4 +95,4 @@ batchIndexAll = Indexer(IndexBatchAll)
 IndexDictionary = mergeBatchInMainIndex(IndexDictionary, batchIndexAll)
 IndexDictionary["small"]
 
-IF.saveDict(IndexDictionary, "testIndex", ".pkl")
+IF.saveDict(IndexDictionary,'./SavedIndexes/' + "testIndex", ".pkl")
