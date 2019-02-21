@@ -21,16 +21,20 @@ IndexDictionary = {}
 # function: to parse csv files
     # every line in a csv represents a page
     # every line will be processed by the following three functions:
+    # DONE
 
 # function = input: string with text. outputs: list of cleaned tokens
     # indexable text: lowercase, tokenize, remove white space and punctuation, remove stop words, convert terms to their stems
+    # DONE  
 
 # function = input: pointer to MovieObject, list with cleaned tokens. Output: make dict with unique terms with values a list of indexes places in the original list 
     # intermediate dict, together in a list with the pointer
     # MovieObject with a key existing of (no spaces or non-alphanumerical characters) title_year: contains information of all different sites
+    # TODO
 
 # function = input: list with pointer and intermediate dict. Output: parse the terms in the dict and place them in the BatchDictionary, can be save as a file 
     # Batchdict
+    # TODO
 
 
 
