@@ -137,7 +137,7 @@ def main(args):
 	jobs = []
 	for i in range(0, num_procs):
 		process = multiprocessing.Process(target=crawl,
-			                              args=(pages_to_collect, str(i), access_lock, num_procs))
+			                               args=(pages_to_collect, str(i), access_lock, num_procs))
 		jobs.append(process)
 
 	# Start the processes (i.e. calculate the random number lists)

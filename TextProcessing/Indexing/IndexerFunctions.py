@@ -88,6 +88,11 @@ def saveDict(obj, name, ext):
     with open(filePath, 'wb') as f:
         pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
 
+def saveDF2CSV(df, name):
+    filePath = legitFilePath(name, '.csv')
+    df.to_csv(filePath, index=False)
+    return filePath
+
 def legitFilePath(filename, ext):
     dateStamp = datetime.datetime.today().strftime('%Y-%m-%d')
     if not os.path.isfile(filename + "_" + dateStamp + ext):

@@ -30,11 +30,11 @@ IndexDictionary = {}
 # function = input: list with cleaned tokens. Output: make dict with unique terms with values a list of indexes places in the original list 
     # intermediate dict for a page
     # MovieObject with a key existing of (no spaces or non-alphanumerical characters) title_year: contains information of all different sites
-    # TODO
+    # DONE
 
 # function = input: list with pointer and intermediate dict. Output: parse the terms in the dict and place them in the BatchDictionary, can be save as a file 
     # Batchdict
-    # TODO
+    # DONE
 
 
 

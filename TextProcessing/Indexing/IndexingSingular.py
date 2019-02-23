@@ -33,25 +33,28 @@ def Indexer(BatchDF):
         #print("\n next title: ", row["title"])
         try: 
             KeyName = IF.getKeyName(row["title"], str(row["year"]))
-            listOfTerms = IF.cleanText(row["title"] + str(row["summary"]))
+            listOfTerms = IF.cleanText(row["title"] + str(row["combined_summaries"]))
         except:
             print("fail due to Something")
             print("title: ", row["title"])
             print("year: ", row["year"])
-            print("summary: ", row["summary"])
+            print("combined_summaries: ", row["combined_summaries"])
             continue
         #F: return intermediate dict
         intermediateDict = IF.getUniqueTerms(listOfTerms)
         #F: return BatchDict
         batchDict = IF.add2BatchDict(batchDict, intermediateDict, KeyName)
+
+
         #For testing
-        #print(row['summary'])
+        #print(row['combined_summaries'])
         #print(KeyName)
         #print(listOfTerms)
         #print(intermediateDict)
         #print(batchDict["small"])
-        if index % int(dfLength/10) == 0:
-            print("Indexing rows at {}%".format((math.ceil((index/dfLength)*100))))
+        if index % math.ceil(dfLength/10) == 0:
+            print("Indexing at {}%".format((math.ceil((index/dfLength)*100))))
+    print("Indexing at {}%".format((math.ceil((index/dfLength)*100))))
     print("Indexing complete")
     return batchDict
 
@@ -91,8 +94,8 @@ def mergeBatchInMainIndex(IndexDictionary, batchDict):
 # Testing all
 mainPF = csv2DF(csvfiles)
 IndexBatchAll = mainPF
+#IndexBatchAll = mainPF.iloc[:1000] # portion
 batchIndexAll = Indexer(IndexBatchAll)
 IndexDictionary = mergeBatchInMainIndex(IndexDictionary, batchIndexAll)
-IndexDictionary["small"]
 
-IF.saveDict(IndexDictionary,'./SavedIndexes/' + "testIndex", ".pkl")
+IF.saveDict(IndexDictionary,'./SavedIndexes/' + "TestIndex", ".pkl")
