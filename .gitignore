@@ -3,3 +3,6 @@ Multicrawler/allmovie/*
 Multicrawler/flixable/*
 Multicrawler/imdb/*
 Multicrawler/rottentomatoes/*
+*.csv
+*.pyc
+*.pkl
