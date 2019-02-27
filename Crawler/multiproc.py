@@ -6,19 +6,17 @@ from bs4 import BeautifulSoup
 from time import sleep
 import re
 import os
-import sys
 
 #Global variables
-target_folder = os.getcwd()+'\\allmovie'
+target_folder = '/allmovie'
 base_url = 'https://www.allmovie.com/movie/'
+
+#access_lock = 0 Probably not needed here
+num_procs = 10
+num_pages_to_collect = 1000
 
 to_do_file = 'allmovie_to_do.txt'
 done_file = 'allmovie_done.txt'
-
-headers = {
-    'User-Agent': 'Robot from the UvA, http://www.uva.nl/',
-    'From': '10645012@student.uva.nl'
-}
 
 #Append urls to the done file
 def add_done(urls):
@@ -28,7 +26,6 @@ def add_done(urls):
 
 #Append urls to the to_do file if they are not yet in either the to_do or the done file
 def add_to_do(urls):
-	urls = list(set(urls))
 	to_do = get_to_do()
 	done = get_done()
 	with open(to_do_file, 'a') as f:
@@ -47,7 +44,7 @@ def get_to_do():
 		return f.readlines()
 
 #Remove a batch of urls from the to_do file and return them to the crawler for scraping			
-def pop_to_do(process_id, num_procs):
+def pop_to_do(process_id, num_procs=num_procs):
 	to_do = get_to_do()
 	num_to_pop = (int)(len(to_do)/num_procs) # Number of urls to pop from the to_do stack
 	if num_to_pop == 0 and len(to_do) > 0:
@@ -66,7 +63,7 @@ def pop_to_do(process_id, num_procs):
 		
 #Given a url, return the content of the page as string
 def get_page(url):
-	response = requests.get(url, headers=headers)
+	response = requests.get(url, headers={'user-agent': 'Mozilla/5.0'})
 	return response.text
 	
 def store(page, url):
@@ -80,13 +77,7 @@ def get_movie_links(page):
 	soup = BeautifulSoup(page, 'html.parser')
 	links = [a['href'] for a in soup.findAll('a', href=True)]
 	movielinks = [base_url+re.split('\?|\/',link)[2] for link in links if link.startswith('/movie')]
-	movielinks.extend([base_url + link[1:] for link in links if link.startswith('/genre')])
 	return movielinks
-
-# checks pages that are important for retrieving links, but must not be saved themselves
-def checkURL(RotTomURL):
-	reviewURL = "www.allmovie.com/movie"
-	return True if reviewURL in RotTomURL else False
 	
 def crawl(pages_to_collect, process_id, access_lock, num_procs):
 	urls = list() # Pages to crawl
@@ -99,9 +90,9 @@ def crawl(pages_to_collect, process_id, access_lock, num_procs):
 			if len(urls) > 0:
 				add_done(urls)
 				done = get_done()
-				if len(done) > pages_to_collect:
+				if done > pages_to_collect:
 					return
-			urls = [url.strip() for url in pop_to_do(str(process_id), num_procs)] # Retrieve new urls to crawl from the to_do stack
+			urls = [url.strip() for url in pop_to_do(str(process_id))] # Retrieve new urls to crawl from the to_do stack
 			if len(local_links) > 1:
 				add_to_do(local_links)
 			local_links = list()
@@ -119,16 +110,15 @@ def crawl(pages_to_collect, process_id, access_lock, num_procs):
 			print('failed for url '+url+' by process '+str(process_id))		
 		sleep(1*num_procs)
 
-	
-def main(args):
+if __name__ == "__main__":
 	access_lock = multiprocessing.Value('i', 0)
-	pages_to_collect = int(args[0])
-	num_procs = int(args[1])   # Number of processes to create
+	procs = num_procs   # Number of processes to create
+	pages_to_collect = num_pages_to_collect
 	# Create a list of jobs and then iterate through
 	# the number of processes appending each process to
 	# the job list
 	jobs = []
-	for i in range(0, num_procs):
+	for i in range(0, procs):
 		process = multiprocessing.Process(target=crawl,
 			                              args=(pages_to_collect, str(i), access_lock, num_procs))
 		jobs.append(process)
@@ -142,6 +132,3 @@ def main(args):
 		j.join()
 	
 	print("Crawling complete.")
-	
-if __name__ == "__main__":
-	main(sys.argv[1:])
