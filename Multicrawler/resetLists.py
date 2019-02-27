@@ -1,5 +1,3 @@
-
-
 #reset all crawlers
 import os
 path = os.getcwd() + "\\"
@@ -8,7 +6,7 @@ fullPath_allmovie = path + "allmovie_to_do.txt"
 open(fullPath_allmovie, 'w+').close()
 open(path + "allmovie_done.txt", "w+").close()
 allMovie = open(fullPath_allmovie, 'w', encoding='utf-8')
-allMovie.write("https://www.allmovie.com/" + "\n")
+allMovie.write("https://www.allmovie.com/movie/" + "\n")
 allMovie.close()
 
 fullPath_flixable = path + "flixable_to_do.txt"
