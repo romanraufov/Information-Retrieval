@@ -25,6 +25,7 @@ def getMainMovieCSV():
 	csvfiles = glob.glob(path2csvs)
 	return csvfiles[0]
 
+# not being used with only 1 file
 # input: list of csvs. output: oneMain DF.
 def csv2DF(listofCsv):
 	ListOfPD = [pd.read_csv(csv) for csv in listofCsv] # load files
