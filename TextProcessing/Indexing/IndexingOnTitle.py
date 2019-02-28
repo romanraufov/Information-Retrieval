@@ -18,8 +18,6 @@ import IndexingMachineFunctions as IMF
 IndexDictionary = {}
 
 # Load list of CSV files containing info for indexing
-
-
 def getMainMovieCSV():
 	path2csvs = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\PagesProcessed\\*.csv"
 	csvfiles = glob.glob(path2csvs)
@@ -43,7 +41,7 @@ def Indexer(BatchDF):
 		#print("\n next title: ", row["title"])
 		try: 
 			KeyName = IF.getKeyName(row["title"], str(row["year"]))
-			listOfTerms = IF.cleanText(row["title"] + str(row["combined_summaries"]))
+			listOfTerms = IF.cleanText(row["title"])
 		except:
 			print("fail due to Something")
 			print("title: ", row["title"])
@@ -154,7 +152,7 @@ def merge2MainIndex():
 		pickle_in = open(pkl,"rb")
 		mergeBatchInMainIndex(MainIndexDictionary, pickle.load(pickle_in))
 	path2MainIndex = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\MainIndexFile\\"
-	IF.saveDict(MainIndexDictionary, path2MainIndex + "MainIndex", ".pkl")
+	IF.saveDict(MainIndexDictionary, path2MainIndex + "TitleIndex", ".pkl")
 	IMF.addTime("Merging Complete, MainIndex has been saved")
 
 # input: batch size, number of parallel processes

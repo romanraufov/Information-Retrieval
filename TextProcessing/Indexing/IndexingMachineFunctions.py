@@ -29,6 +29,13 @@ def removeFile(path2File):
     os.remove(path2File)
     addTime(path2File + "has been removed")
 
+def emptyFolder(path2Folder):
+    filesInFolder = glob.glob(path2Folder)
+    print(filesInFolder)
+    for file in filesInFolder:
+        removeFile(file)
+    addTime(path2Folder + " has been emptied")
+
 def retrieveIndex(path2File):
     IndexLogDF = pd.read_csv(path2File)
     lastLine = IndexLogDF.iloc[-1]
@@ -88,3 +95,6 @@ def getCSVLength(csvFile):
 
 # removeFile(logFile)
 # TestLength = getCSVLength(csvfiles[0])
+
+
+emptyFolder("C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\BatchIndexFiles\\*")

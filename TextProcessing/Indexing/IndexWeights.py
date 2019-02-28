@@ -12,14 +12,14 @@ import IndexingMultiple as IM
 
 # load dict
 def getDict():
-    path2dict = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\SavedIndexes\\FullIndexes\\FullFirstIndex_2019-02-22.pkl"
+    path2dict = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\MainIndexFile\\TitleIndex_2019-02-28.pkl"
     pickle_in = open(path2dict,"rb")
     return pickle.load(pickle_in)
 
 # save dict
 def saveNewDict(WeightDict):
     path2save = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\MainIndexFile\\"
-    fullPath = path2save + "FullWeightedIndex"
+    fullPath = path2save + "TitleWeightedIndex"
     IF.saveDict(WeightDict, fullPath, ".pkl")
     IMF.addTime("Dictionary with weights has been saved in folder: \n" + path2save)
 
