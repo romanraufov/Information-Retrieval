@@ -3,14 +3,13 @@ import pickle
 import sys
 import operator
 from collections import Counter
+from datetime import datetime
 
 # local import
 sys.path.insert(0, 'C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing')
 import IndexerFunctions as IF
 import IndexingMachineFunctions as IMF
 #######
-
-
 
 # load dict
 def getDict():
@@ -53,23 +52,58 @@ def buildQueryDict(query, IndexDict):
     return queryDict
 
 def getTopDocs(resultDict, nReturned = 10):
+    # TODO if nReturned == -1, return all docs
+    # TODO what happens if the list is not long enough?
     addCounter = Counter(resultDict)
     TopDocs = addCounter.most_common(10)
     TopList = [pair[0] for pair in TopDocs]
     return(TopList)
 
-#Testing
-IndexDict = getDict()
-IMF.addTime(IndexDict['consfront'])
-IMF.addTime(SearchIndex('consfront', IndexDict))
-
 IndexDict = getDict()
 def ProcessQuery(query):
-    cQuery = IF.cleanText(TestQuery)
+    cQuery = IF.cleanText(query)
     resultDict = buildQueryDict(cQuery, IndexDict)
     topDocs = getTopDocs(resultDict)
     return topDocs
 
-TestQuery = "Pirate of the Caribbean"
-foundDocs = ProcessQuery(TestQuery)
-IMF.addTime(foundDocs)
+# Query Processing Executers
+
+def interactiveSearch():
+    searchQuery = 'start'
+    while searchQuery:
+        # query processing
+        searchQuery = input("\nenter your search query: ")
+        if searchQuery == 'quit':
+            break
+        TimeAtBeginning = datetime.now()
+        foundDocs = ProcessQuery(searchQuery)
+        TimeAtEnd = datetime.now()
+
+        #show result
+        IMF.addTime("\nThese are the found documents on your query: " + searchQuery)
+        for doc in foundDocs:
+            print(doc)
+        IMF.addTime("search time is: {:.5f} seconds".format((TimeAtEnd-TimeAtBeginning).total_seconds()))
+
+def automatedTestSearch():
+    testList = getTestList()
+    TimeAtBeginning = datetime.now()
+    DocsPerQuery = {}
+    for query in testList:
+        DocsPerQuery[query] = ProcessQuery(query)
+    TimeAtEnd = datetime.now()
+
+    IMF.addTime("These documents have been for the following queries: \n")
+    for query in DocsPerQuery:
+        print(query, "- found docs: ",DocsPerQuery[query])
+    IMF.addTime("search of all {} queries executed in {:.5f} seconds".format(len(testList) ,(TimeAtEnd-TimeAtBeginning).total_seconds()))
+    IMF.addTime("average search time of {:.5f} seconds".format((TimeAtEnd-TimeAtBeginning).total_seconds()/len(testList)))
+
+def getTestList():
+    # TODO: load a big external testList
+    testList = ["Pirates of the Caribbean","Monty Python", "A star is Born", "The Terminator", "Little Miss Sunshine", "The Matrix"]
+    return testList
+
+
+interactiveSearch()
+automatedTestSearch()
