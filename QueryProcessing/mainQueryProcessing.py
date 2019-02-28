@@ -1,6 +1,8 @@
 # global import
 import pickle
 import sys
+import operator
+from collections import Counter
 
 # local import
 sys.path.insert(0, 'C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing')
@@ -11,40 +13,63 @@ import IndexingMachineFunctions as IMF
 
 
 # load dict
-path2dict = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\SavedIndexes\\FullIndexes\\FullFirstIndex_2019-02-22.pkl"
+def getDict():
+    path2dict = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\MainIndexFile\\FullWeightedIndex_2019-02-28.pkl"
+    pickle_in = open(path2dict,"rb")
+    return pickle.load(pickle_in)
 
-pickle_in = open(path2dict,"rb")
-IndexDict = pickle.load(pickle_in)
+def SearchIndex(term, indexDict):
+    try:
+        termValue = indexDict[term]
+    except:
+        IMF.addTime("term not in Index")
+        termValue = False
+    return termValue
 
+def retrieveWeights(termIndex):
+    weightsTerm = [termIndex['pointers'], termIndex['weights']]
+    return weightsTerm
 
-TestQuery = "Pirate of the Caribbean"
+def add2QueryDict(pointer, weight, queryDict):
+    if pointer in queryDict:
+        queryDict[pointer] += weight
+    else:
+        queryDict[pointer] = weight
+    return queryDict
 
-# clean query
-cQuery = IF.cleanText(TestQuery)
-IMF.addTime(cQuery)
+def buildQueryDict(query, IndexDict):
+    """
+    input: query and SearchIndexDictionary
+    ouput: query dictionary containing documents and weights
+    """
+    queryDict = {}
+    for term in query:
+        termIndex = SearchIndex(term, IndexDict)
+        if not termIndex:
+            continue
+        docsWeight = retrieveWeights(termIndex)
+        for i in range(len(docsWeight[0])):
+            queryDict = add2QueryDict(docsWeight[0][i], docsWeight[1][i], queryDict)
+    return queryDict
 
-# build query dict
-    # initialize empty dict
-        # empty dict in which docs are added with weight value
-    # per term:
-        # retrieve documents
-        # enumerate docs and weights file
-        # doc is not in query dict:
-            # create doc-key and weight-value
-        # doc is in query dict:
-            # sum weight to weight in dict
-    # return query dict
-
-# sort query dict
-    # return list with docs in rank order
-
-# get top documents
-    # return list of n top documents
-
-
-
-
+def getTopDocs(resultDict, nReturned = 10):
+    addCounter = Counter(resultDict)
+    TopDocs = addCounter.most_common(10)
+    TopList = [pair[0] for pair in TopDocs]
+    return(TopList)
 
 #Testing
-IndexDict.keys()
+IndexDict = getDict()
 IMF.addTime(IndexDict['consfront'])
+IMF.addTime(SearchIndex('consfront', IndexDict))
+
+IndexDict = getDict()
+def ProcessQuery(query):
+    cQuery = IF.cleanText(TestQuery)
+    resultDict = buildQueryDict(cQuery, IndexDict)
+    topDocs = getTopDocs(resultDict)
+    return topDocs
+
+TestQuery = "Pirate of the Caribbean"
+foundDocs = ProcessQuery(TestQuery)
+IMF.addTime(foundDocs)

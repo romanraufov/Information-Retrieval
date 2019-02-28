@@ -9,16 +9,21 @@ import IndexingMachineFunctions as IMF
 import IndexingMultiple as IM
 #######
 
+
+# load dict
+def getDict():
+    path2dict = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\SavedIndexes\\FullIndexes\\FullFirstIndex_2019-02-22.pkl"
+    pickle_in = open(path2dict,"rb")
+    return pickle.load(pickle_in)
+
+# save dict
+def saveNewDict(WeightDict):
+    path2save = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\MainIndexFile\\"
+    fullPath = path2save + "FullWeightedIndex"
+    IF.saveDict(WeightDict, fullPath, ".pkl")
+    IMF.addTime("Dictionary with weights has been saved in folder: \n" + path2save)
+
 # get weights per documents by tf-idf way
-
-# iterate over document:
-    # get total amount of doc
-    # iterate over tf per doc:
-        # per tf, calculate tf-idf
-        # append value to weight key
-
-
-
 def addWeights2Dict(IndexDict):
     dictCounter = 0
     lenghtDict = len(IndexDict)
@@ -51,18 +56,6 @@ def getTotalDocsInCorpus():
     except:
         numberDocs = 70000
     return numberDocs
-
-def saveNewDict(WeightDict):
-    path2save = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\MainIndexFile\\"
-    fullPath = path2save + "FullWeightedIndex"
-    IF.saveDict(WeightDict, fullPath, ".pkl")
-    IMF.addTime("Dictionary with weights has been saved in folder: \n" + path2save)
-
-# load dict
-def getDict():
-    path2dict = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\SavedIndexes\\FullIndexes\\FullFirstIndex_2019-02-22.pkl"
-    pickle_in = open(path2dict,"rb")
-    return pickle.load(pickle_in)
 
 
 IndexDict = getDict()
