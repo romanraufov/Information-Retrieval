@@ -80,9 +80,10 @@ def interactiveSearch():
         TimeAtEnd = datetime.now()
 
         #show result
-        IMF.addTime("\nThese are the found documents on your query: " + searchQuery)
+        IMF.addTime("\nThese are the found documents on your query: " + searchQuery + "\n")
         for doc in foundDocs:
             print(doc)
+        print("\n")
         IMF.addTime("search time is: {:.5f} seconds".format((TimeAtEnd-TimeAtBeginning).total_seconds()))
 
 def automatedTestSearch():

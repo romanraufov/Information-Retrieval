@@ -2,6 +2,7 @@ import csv
 import pandas
 import os
 import re
+import glob
 wikititles = []
 imdbtitles = []
 flixabletitles = []
@@ -11,7 +12,9 @@ allmovietitles = []
 title_converter = {}
 year_converter = {}
 summary_converter = {}
-for file in os.listdir(os.getcwd()):
+targetFolder = glob.glob("C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\PagesProcessed\\*.txt")
+
+for file in targetFolder:
 	if '.csv' in file and 'combined' not in file:
 		if 'allmovie' in file:
 			#continue
@@ -130,7 +133,7 @@ for cleantitle in all_titles:
 	dict = {'title': title_converter[cleantitle],'cleantitle': cleantitle,'year': year_converter[cleantitle],'combined_summaries': summary_converter[cleantitle]}
 	target_list.append(dict)
 
-with open('combined_data.csv', 'w', encoding='utf-8',newline='') as f:
+with open('combined_dataNew.csv', 'w', encoding='utf-8',newline='') as f:
 	writer = csv.DictWriter(f, fieldnames=['title','cleantitle','year','combined_summaries'])
 	writer.writeheader()
 	for data in target_list:

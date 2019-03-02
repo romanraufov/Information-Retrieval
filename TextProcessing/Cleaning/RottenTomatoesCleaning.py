@@ -27,6 +27,7 @@ base_path = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\Multicrawler"
 
 #all files
 path = "C:\\Users\\chris\\OneDrive\\Documenten\\DataScience\\InformationRetrieval\\ScrapedSites\\RottenTomatoes\\*.txt"
+path = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\Multicrawler\\multisitestoreNew\\*.txt"
 
 files = glob.glob(path)
 #print(files)
@@ -101,5 +102,5 @@ data = pd.DataFrame({'title': titlelist, 'summary': summarylist,"year":yearlist}
 
 #print(data)
 #data["title"]
-data.to_csv("C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\PagesProcessed\\RottenTomatoes.csv", index=False, quoting=csv.QUOTE_ALL)
+data.to_csv("C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\PagesProcessed\\RottenTomatoesNew.csv", index=False, quoting=csv.QUOTE_ALL)
 print("\n RottemTomatoes files have been cleaned")

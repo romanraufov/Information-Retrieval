@@ -10,7 +10,7 @@ import sys
 import random
 
 #Global variables
-target_folder = os.getcwd()+'\\multisitestore'
+target_folder = os.getcwd()+'\\multisitestoreNew'
 
 to_do_file = 'to_do.txt'
 done_file = 'done.txt'

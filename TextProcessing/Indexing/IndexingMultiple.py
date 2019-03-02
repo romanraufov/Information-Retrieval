@@ -21,7 +21,7 @@ IndexDictionary = {}
 
 
 def getMainMovieCSV():
-	path2csvs = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\PagesProcessed\\*.csv"
+	path2csvs = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\PagesProcessedTest\\newTest.csv"
 	csvfiles = glob.glob(path2csvs)
 	return csvfiles[0]
 
@@ -154,7 +154,7 @@ def merge2MainIndex():
 		pickle_in = open(pkl,"rb")
 		mergeBatchInMainIndex(MainIndexDictionary, pickle.load(pickle_in))
 	path2MainIndex = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\MainIndexFile\\"
-	IF.saveDict(MainIndexDictionary, path2MainIndex + "MainIndex", ".pkl")
+	IF.saveDict(MainIndexDictionary, path2MainIndex + "newIndexTestUpdate", ".pkl")
 	IMF.addTime("Merging Complete, MainIndex has been saved")
 
 # input: batch size, number of parallel processes
