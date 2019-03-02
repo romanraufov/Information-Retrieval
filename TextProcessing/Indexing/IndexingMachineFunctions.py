@@ -5,6 +5,7 @@ import IndexerFunctions as IF
 import glob
 import csv
 from datetime import datetime
+import pickle
 
 import pytz
 cet = pytz.timezone('CET')
@@ -31,7 +32,6 @@ def removeFile(path2File):
 
 def emptyFolder(path2Folder):
     filesInFolder = glob.glob(path2Folder)
-    print(filesInFolder)
     for file in filesInFolder:
         removeFile(file)
     addTime(path2Folder + " has been emptied")
@@ -65,6 +65,9 @@ def getCSVLength(csvFile):
     f.close()
     return row_count
     
+def getDict(path2dict):
+    pickle_in = open(path2dict,"rb")
+    return pickle.load(pickle_in)
 
 
 
@@ -95,6 +98,3 @@ def getCSVLength(csvFile):
 
 # removeFile(logFile)
 # TestLength = getCSVLength(csvfiles[0])
-
-
-emptyFolder("C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\BatchIndexFiles\\*")
