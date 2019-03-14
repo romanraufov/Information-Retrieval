@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[10]:
+# In[1]:
 
 
 import pandas as pd
@@ -17,6 +17,7 @@ import csv
 import math
 import unicodedata
 import nltk
+from collections import Counter 
 
 
 import nltk.classify.util
@@ -27,7 +28,7 @@ from nltk.corpus import stopwords
 from bs4 import BeautifulSoup
 
 
-# In[32]:
+# In[2]:
 
 
 ### SCHOONMAKEN!!!!!!#############
@@ -66,7 +67,7 @@ def clean(review):
     #    return ""
 
 
-# In[37]:
+# In[3]:
 
 
 #### INSERT HERE LOAD CSV WITH LIST OF LISTS REVIEWS PER MOVIE
@@ -107,7 +108,7 @@ for file in files:
             reviews.append(templist)
 
 
-# In[38]:
+# In[4]:
 
 
 data = pd.DataFrame({'title': titlelist,"year":yearlist, "summary":reviews})
@@ -115,7 +116,7 @@ data = pd.DataFrame({'title': titlelist,"year":yearlist, "summary":reviews})
 data
 
 
-# In[39]:
+# In[5]:
 
 
 #### FROM HERE REAL SENTIMENT ANALYSIS CODE######################
@@ -142,7 +143,7 @@ negcutoff = int(len(negfeats)*3/4)
 poscutoff = int(len(posfeats)*3/4)
 
 
-# In[40]:
+# In[6]:
 
 
 # Construct the training dataset containing 50% positive reviews and 50% negative reviews
@@ -166,10 +167,11 @@ def create_word_features(words):
     return my_dict
 
 
-# In[41]:
+# In[26]:
 
 
 finallist=[]
+
 for movie in data["summary"]:
     templist=[]
     for x in movie:
@@ -177,13 +179,8 @@ for movie in data["summary"]:
         words = create_word_features(words)
         output=classifier.classify(words)
         templist.append(output)
-    finallist.append(templist)     
+        ratings=Counter(templist)
+    finallist.append(ratings)     
   
 data["sentiment"]=finallist
-
-
-# In[42]:
-
-
-data
 
