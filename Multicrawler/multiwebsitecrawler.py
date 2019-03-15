@@ -10,7 +10,7 @@ import sys
 import random
 
 #Global variables
-target_folder = os.getcwd()+'\\multisitestore'
+target_folder = os.getcwd()+'\\multisitestoreNew'
 
 to_do_file = 'to_do.txt'
 done_file = 'done.txt'
@@ -92,8 +92,15 @@ def get_movie_links(page, url):
 	elif 'flixable' in url:
 		return ['https://flixable.com/title/'+re.split('\?|\/',link)[2] for link in links if link.startswith('/title')]
 	elif 'rottentomatoes' in url:
-		return ['https://www.rottentomatoes.com/m/'+re.split('\?|\/',link)[2] for link in links if link.startswith("/m/")]
-	
+		RotTomlinks = ['https://www.rottentomatoes.com/m/'+re.split('\?|\/',link)[2] for link in links if link.startswith("/m/")]
+		RotTomlinks.extend(["https://www.rottentomatoes.com" + link for link in links if "/top/" in link])
+		return RotTomlinks
+
+# checks pages that are important for retrieving links, but must not be saved themselves
+def checkURL(RotTomURL):
+	reviewURL = "www.rottentomatoes.com/top"
+	return True if reviewURL not in RotTomURL else False
+		
 def crawl(pages_to_collect, process_id, access_lock, num_procs):
 	urls = list() # Pages to crawl
 	local_links = list() # Links retrieved by the crawler. Will be pushed to the shared to_do stack
@@ -117,7 +124,8 @@ def crawl(pages_to_collect, process_id, access_lock, num_procs):
 		#try:
 		for url in urls:
 			page = get_page(url)
-			store(page,url)
+			if checkURL(url):
+				store(page,url)
 			movie_links = get_movie_links(page, url)
 			local_links.extend(movie_links)
 			print(url, 'succesfully stored by process ', str(process_id))
@@ -125,7 +133,6 @@ def crawl(pages_to_collect, process_id, access_lock, num_procs):
 		#	print('failed for url '+url+' by process '+str(process_id))		
 		base_sleeptime = random.randint(1,11)/10
 		sleep(base_sleeptime*num_procs)
-
 	
 def main(args):
 	access_lock = multiprocessing.Value('i', 0)

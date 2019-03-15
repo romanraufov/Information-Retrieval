@@ -1,0 +1,21 @@
+
+
+
+
+# initialize weight:
+    -iterate through all keys
+    -get number of docs
+    -per document:
+        -get number of tf
+        -apply idf and store it 
+
+
+# query processing:
+    -normalize query (same way as docs) DONE
+    -find query term in dict 
+    -return top 5 docs in ranking order (accumulator array implementation):
+        -determine rank by simple starting metric
+        -assemble all weights per document
+        -sum weights per document
+        -return document corresponding to their summed weight in descending order 
+        -for now a cut off at 5

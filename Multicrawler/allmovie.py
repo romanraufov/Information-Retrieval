@@ -80,7 +80,13 @@ def get_movie_links(page):
 	soup = BeautifulSoup(page, 'html.parser')
 	links = [a['href'] for a in soup.findAll('a', href=True)]
 	movielinks = [base_url+re.split('\?|\/',link)[2] for link in links if link.startswith('/movie')]
+	movielinks.extend([base_url + link[1:] for link in links if link.startswith('/genre')])
 	return movielinks
+
+# checks pages that are important for retrieving links, but must not be saved themselves
+def checkURL(RotTomURL):
+	reviewURL = "www.allmovie.com/movie"
+	return True if reviewURL in RotTomURL else False
 	
 def crawl(pages_to_collect, process_id, access_lock, num_procs):
 	urls = list() # Pages to crawl

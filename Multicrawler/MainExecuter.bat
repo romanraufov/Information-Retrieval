@@ -8,8 +8,6 @@ pause
 echo Every crawler now crawls up to %npages% pages
 echo Every domain contains %ncrawlers% Crawlers
 
-echo %~dp0
-
 echo Initate crawlers
 TIMEOUT /T 3
 

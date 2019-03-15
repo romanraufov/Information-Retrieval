@@ -1,14 +1,12 @@
 
 # coding: utf-8
 
-# In[430]:
-
-
 import pandas as pd
 import numpy as np 
 import matplotlib as plt
 import seaborn as sns
 import glob , numpy
+import os
 import os.path
 import re
 import html
@@ -17,12 +15,9 @@ from bs4 import BeautifulSoup
 #breek op elke comment, dus code tussen comments in een aparte cell. 
 
 
-# In[456]:
-
-
+base_path = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\Multicrawler"
 #hier path naar txt files
 path="C:\\Users\\flori\\OneDrive\\Documenten\\Information Retrieval\\allmovie\\*.txt"
-
 files = glob.glob(path)
 titlelist=[]
 cleantitlelist=[]
@@ -71,22 +66,15 @@ for file in files:
 	#	print("failed for "+file)
 	#	continue
 
-
-# In[432]:
-
-
 #Need to clean summaries, this is as clean as it gets. Still need normalize and stem ofc
 summaryclean=[]
 for my_str in summarylist:
 	rest=re.sub('<.*?>', '', my_str)
 	summaryclean.append(rest)
 
-# In[436]:
-
+  
 data = pd.DataFrame({'title': titlelist,'cleantitle':cleantitlelist, 'summary': summaryclean,"year":yearlist, 'rating':ratinglist,'AllMovieUrl':urllist})
-
-# In[344]:
 
 
 data.to_csv("AllMovie.csv", encoding='utf-8', index=False)
-
+print("Allmovie files have been cleaned")
