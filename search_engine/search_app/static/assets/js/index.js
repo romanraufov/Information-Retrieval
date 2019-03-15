@@ -117,6 +117,10 @@ $(function () {
     //
     // });
 
+    $('body').keypress(function(event){ 
+        var keyCode = (event.keyCode ? event.keyCode : event.which);   
+        if (keyCode == 13) {
+            $('#search_button').trigger('click');
+        }
+    });
 });
-
-

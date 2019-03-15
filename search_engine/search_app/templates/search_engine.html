@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     {% load static %}
-    <img src="{% static "/Bram.png" %}" alt="My image">
 <head>
     <title>Search Movie</title>
     <meta charset="utf-8" />
@@ -220,7 +219,7 @@ function getCookie(name) {
                                 </div>
                                 <div class="row justify-content-center">
                                     <div class="col-sm col-md-12 text-center">
-                                        <button type="button" class="btn btn-primary bluebutton do_search"><i class="fa fa-search"
+                                        <button id="search_button" type="button" class="btn btn-primary bluebutton do_search"><i class="fa fa-search"
                                                aria-hidden="true"></i>
                                             Zoek films
                                         </button>
