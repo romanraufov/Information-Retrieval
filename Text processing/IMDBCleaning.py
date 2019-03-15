@@ -1,6 +1,9 @@
 
 # coding: utf-8
 
+# In[51]:
+
+
 import pandas as pd
 import numpy as np 
 import matplotlib as plt
@@ -14,121 +17,104 @@ import csv
 import math
 
 from bs4 import BeautifulSoup
-#let op, als het niet werkt start dit in de anaconda notebook
-#breek op elke comment, dus code tussen comments in een aparte cell. 
 
 
-base_path = "D:\\Downloads\\IMDb_pages"
-#hier path naar txt files
+# In[62]:
 
 
-#Debugging
-path= base_path + "\\*.txt"
-
-#all files
-#path = "C:\\Users\\chris\\OneDrive\\Documenten\\DataScience\\InformationRetrieval\\ScrapedSites\\RottenTomatoes\\*.txt"
-
+path="E:\Crawledmovies\*.txt"
 files = glob.glob(path)
-#print(files)
-
 
 titlelist=[]
 summarylist=[]
-synopsislist = []
 yearlist = []
 WatchTypelist = []
+imdburllist=[]
 counter = 0
 WatchTypePosibilities = ["Episode", "Video", "Series"]
 
 totalFileCount = len(files)
 for file in files:
-	#print("file: ", file)
-	counter += 1
-	try:
-		myfile = open(file, 'r',encoding="utf8")
-		soup = BeautifulSoup(myfile.read(), "html.parser")
-		#print(soup)
-		#print("tags: ", soup.find("meta", property="og:title")['content'])
-		metaTag = soup.find("meta", property="og:title")['content'].split("(")
-		CurrentWatchType = [i for i in WatchTypePosibilities if i in metaTag[-1]]
-		if not CurrentWatchType:
-			CurrentWatchType = ["Movie"]
-		title = metaTag[:-1][0]
-		#print(title)
-		yearpart = re.findall('\d+', metaTag[-1])
-		year = yearpart[0] if len(yearpart) == 1 else yearpart[0] + "-" + yearpart[1]
-		summary = soup.find("meta", property="og:description")['content']
-		
-		summary = summary.lower().split(".")
-		if len(summary) == 1:
-			summary = summary[0]
-		elif "ted by" in summary[0]:
-			summary = summary[1:]
-		if "with" in summary[0][:10]:
-			summary = summary[1:]
-		summary = ".".join(summary)
+    #print("file: ", file)
+    counter += 1
+    myfile = open(file, 'r',encoding="utf8")
+    soup = BeautifulSoup(myfile.read(), "html.parser")
+    #print("tags: ", soup.find("meta", property="og:title")['content'])
+    metaTag = soup.find("meta", property="og:title")['content'].split("(")
+	
 
-		#print(title, ":  ", summary)
+    CurrentWatchType = [i for i in WatchTypePosibilities if i in metaTag[-1]]
+    if not CurrentWatchType:
+        CurrentWatchType = ["Movie"]
+    title = metaTag[:-1][0]
+    yearpart = re.findall('\d+', metaTag[-1])
+    year = yearpart[0] if len(yearpart) == 1 else yearpart[0] + "-" + yearpart[1]
+    summary = soup.find("meta", property="og:description")['content']
 
-		if title is None:
-			continue #jump to next file: If there is no title, we ignore the file
-		else:
-			synopsisfile = 'D:\\Downloads\\IMDb_summary_pages'+file.split('pages')[1].split('.txt')[0]+'_plotsummary.txt'
-			with open(synopsisfile) as myfile:
-				soup = BeautifulSoup(myfile.read(), "html.parser")
-				synopsis = soup.find("ul", {"id": "plot-synopsis-content"}).text.replace('\n',' ').replace('\t','')
-				synopsis = re.sub('\s+', ' ', synopsis)
-				if "It looks like we don't have a Synopsis for this title yet." in synopsis:
-					synopsis = ''
-				synopsislist.append(synopsis)
-				titlelist.append(title)
-				if summary is None:
-					summarylist.append('')
-				else:
-					summarylist.append(summary)
-				if year is None:
-					yearlist.append('')
-				else:
-					yearlist.append(year)
-				WatchTypelist.append(CurrentWatchType[0])
-			
-		#if counter == 200:
-		#	break
-	except:
-		continue
-	if counter % int(totalFileCount/20) == 0:
-		print("Cleaning data at {}%".format((math.ceil((counter/totalFileCount)*100))))
+    summary = summary.lower().split(".")
+    if len(summary) == 1:
+        summary = summary[0]
+    elif "ted by" in summary[0]:
+        summary = summary[1:]
+    if "with" in summary[0][:10]:
+        summary = summary[1:]
+        summary = ".".join(summary)
+    imdburl=soup.find("meta", property="og:url")['content'].split("/>")
+    if title is None:
+        continue #jump to next file: If there is no title, we ignore the file
+    else:
+        titlelist.append(title)
+        if summary is None:
+            summarylist.append('')
+        else:
+            summarylist.append(summary)
+        if year is None:
+            yearlist.append('')
+        else:
+            yearlist.append(year)
+            WatchTypelist.append(CurrentWatchType[0])
+        if imdburl is None:
+            imdburllist.append('')
+        else:
+            imdburllist.append(imdburl)
 
-# #print("titlelist: ", titlelist)
-# #print("summarylist: ", summarylist)
 
-# # #Need to clean summaries, this is as clean as it gets. Still need normalize and stem ofc
-# # summaryclean=[]
-# # for my_str in summarylist:
-# # 	rest=re.sub('<.*?>', '', my_str)
-# # 	summaryclean.append(rest)
+# In[76]:
 
-# # #extract year for a column in df
-# # yearlist=[]
-# # for line in titlelist:
-# # 	title = re.search('\((\d+)\)', line)
-# # 	if title is None:
-# # 		yearlist.append('')
-# # 	else:
-# # 		title=title.group(1)
-# # 		yearlist.append(title)
 
-# # #Clean the title for the dataframe
-# # sep = '('
-# # titlelistclean=[]
-# # for x in titlelist:
-# # 	rest = x.split(sep, 1)[0].split(' - |')[0].strip()
-# # 	titlelistclean.append(rest)
+imdblist=[]
+path="E:\Crawledmovies\*.txt"
+files = glob.glob(path)
+for file in files:
+        myfile=open(file, 'r',encoding="utf8")
+        data=myfile.read().replace('\n', ' ').replace('\t', ' ').replace(';',',')
+        imdb=re.search('itemprop="ratingValue">(.*)</span>', data)
+        if imdb is None:
+            imdblist.append('')
+        else:
+            imdb=imdb.group(1).split('<')[0].strip()
+            imdblist.append(imdb)
 
-  
-# #data = pd.DataFrame({'title': titlelistclean, 'summary': summaryclean,"year":yearlist})
-print("saving csv")
-data = pd.DataFrame({'title': titlelist, 'summary': summarylist,"synopsis":synopsislist,"year":yearlist, "type":WatchTypelist})
-data.to_csv("imdb.csv", index=False, quoting=csv.QUOTE_ALL)
 
-print("\n files have been cleaned")
+# In[77]:
+
+
+imdburllistclean=[]
+for list1 in imdburllist:
+    for my_str in list1:
+        imdburllistclean.append(my_str)
+
+
+# In[78]:
+
+
+data = pd.DataFrame({'title': titlelist, 'summary': summarylist,"year":yearlist, "type":WatchTypelist,"imdb":imdblist,"imdburl":imdburllistclean})
+#data.to_csv("imdbclean.csv", encoding='utf-8', index=False)
+data
+
+
+# In[75]:
+
+
+imdburllist
+

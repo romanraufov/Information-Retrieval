@@ -6,12 +6,15 @@
 
 import numpy as np
 import pandas as pd
+import matplotlib as plt
+import seaborn as sns
 import glob , numpy
 import os
 import os.path
 import re
 import html
 import csv
+import math
 
 from bs4 import BeautifulSoup
 
@@ -19,7 +22,7 @@ from bs4 import BeautifulSoup
 # In[86]:
 
 
-path="E:\\rottentomatoes\\*.txt"
+path="D:\\RTCrawler\\rottentomatoes\\*.txt"
 
 files = glob.glob(path)
 titlelist=[]
@@ -31,11 +34,9 @@ audienceratinglist = []
 criticsratinglist = []
 counter = 0
 totalFileCount = len(files)
-
 print("starting up cleaning process..")
-for file in files:
+for file in files[:100]:
 	counter += 1
-	print(counter)
 	myfile=open(file, 'r',encoding="utf8")
 	file_text = myfile.read()
 	soup = BeautifulSoup(file_text, "html.parser")
@@ -47,24 +48,19 @@ for file in files:
 		summary = soup.find("meta", property="og:description")['content'].replace('"','')#.split(">")
 	except:
 		summary = ""
-	try:
-		tomatometer_score = soup.find("span", {"class":"mop-ratings-wrap__percentage"}).text.strip().split(' ')[0].strip()
+	#try:
+	scores = soup.findAll("h1", {"id":"tomato_meter_link"})
+	tomatometer_score = scores[0].text.strip()
+	audience_score = scores[1].text.strip()
+	audience_avg_rating = soup.findAll("span", {"id":"js-rotten-count"})[1].text.strip()
+	critics_avg_rating = file_text.split('"tomatometerAllCritics":{"avgScore":')[1].split(',')[0].strip()
+	"""
 	except:
-		tomatometer_score = 'N/A'
-	try:
-		audience_score = soup.find("span", {"class":"mop-ratings-wrap__percentage--audience"}).text.strip().split(' ')[0].strip()
-	except:
-		audience_score = 'N/A'	
-	try:
-		audience_avg_rating = 2*float(soup.findAll("span", {"id":"js-rotten-count"})[1].text.split('/')[0].strip())
-	except:
-		audience_avg_rating = 'N/A'
-	try:
-		critics_avg_rating = file_text.split('"tomatometerAllCritics":{"avgScore":')[1].split(',')[0].strip()
-	except:
-		critics_avg_rating = 'N/A'
-	if critics_avg_rating == '0':
-		critics_avg_rating = 'N/A'
+		tomatometer_score = 'No score available'
+		audience_score = 'No score available'
+		audience_avg_rating = 'No rating available'
+		critics_avg_rating = 'No rating available'
+	"""
 	tomatometerlist.append(tomatometer_score)
 	audiencescorelist.append(audience_score)
 	audienceratinglist.append(audience_avg_rating)
