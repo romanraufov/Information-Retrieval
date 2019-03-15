@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-
+    {% load static %}
+    <img src="{% static "/Bram.png" %}" alt="My image">
 <head>
-    <title>Zoeken</title>
+    <title>Search Movie</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible"
           content="IE=edge">
@@ -11,22 +12,27 @@
     <link rel="stylesheet"
           type="text/css"
           media="screen"
-          href="bootstrap/css/bootstrap.min.css" />
+          href="{% static "bootstrap/css/bootstrap.min.css" %}" />
+          <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          href="{% static "bootstrap/css/bootstrap.min.css" %}" />
+
     <link rel="stylesheet"
-          href="assets/icon-font/css/font-awesome.min.css">
+          href="{% static "assets/icon-font/css/font-awesome.min.css" %}">
     <link rel="stylesheet"
       type="text/css"
       media="screen"
-      href="assets/style.css" />
+      href="{% static "assets/style.css" %}" />
 
-    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="{% static "assets/js/jquery-3.3.1.js" %}"></script>
 
     <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
             integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
             crossorigin="anonymous"></script>
 
-    <script src="assets/js/index.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="{% static "assets/js/index.js" %}"></script>
+    <script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
 	<script>
 	function csrfSafeMethod(method) {
     // these HTTP methods do not require CSRF protection
@@ -94,7 +100,7 @@ function getCookie(name) {
             let questionID = $('.do_search').attr('id');
             let parentDiv = $(button).parents(".jq-addsource");
 
-            $.post( "database/Model_Source.php", { func: "addToKnowledgeBase", question_id : questionID, url : url, publish_date : publish_date, title: title, snippet : snippet, type : type, outlet : outlet })
+            $.post( "{% static "database/Model_Source.php"%}", { func: "addToKnowledgeBase", question_id : questionID, url : url, publish_date : publish_date, title: title, snippet : snippet, type : type, outlet : outlet })
                 .done(function( data ) {
                     if (!(data === 'success')){
                         alert(data)
@@ -114,7 +120,7 @@ function getCookie(name) {
 <body class="page_search_engine">
     <!-- 此处显示demo图作为参考-->
     <div class="demopage hidden">
-        <img src="assets/demo/search_engine.png">
+        <img src="{% static "assets/demo/search_engine.png" %}">
     </div>
 
     <div class="container-fluid my-layout d-flex flex-column">
