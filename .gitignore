@@ -6,3 +6,4 @@ Multicrawler/rottentomatoes/*
 *.csv
 *.pyc
 *.pkl
+*.pickle

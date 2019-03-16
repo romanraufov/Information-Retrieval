@@ -17,6 +17,11 @@ def getDict():
     pickle_in = open(path2dict,"rb")
     return pickle.load(pickle_in)
 
+def getTitleDict():
+    path2dict = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\MainIndexFile\\TitleIndex_2019-02-28V2.pkl"
+    pickle_in = open(path2dict,"rb")
+    return pickle.load(pickle_in)
+
 def SearchIndex(term, indexDict):
     try:
         termValue = indexDict[term]
@@ -51,6 +56,21 @@ def buildQueryDict(query, IndexDict):
             queryDict = add2QueryDict(docsWeight[0][i], docsWeight[1][i], queryDict)
     return queryDict
 
+def buildTitleQueryDict(query, internalIndexDict):
+    """
+    input: query and SearchIndexDictionary
+    ouput: query dictionary containing documents and weights
+    """
+    queryDict = {}
+    for term in query:
+        termIndex = SearchIndex(term, internalIndexDict)
+        if not termIndex:
+            continue
+        docsWeight = retrieveWeights(termIndex)
+        for i in range(len(docsWeight[0])):
+            queryDict = add2QueryDict(docsWeight[0][i], docsWeight[1][i], queryDict)
+    return queryDict
+
 def getTopDocs(resultDict, nReturned = 10):
     # TODO if nReturned == -1, return all docs
     # TODO what happens if the list is not long enough?
@@ -66,6 +86,21 @@ def ProcessQuery(query):
     topDocs = getTopDocs(resultDict)
     return topDocs
 
+IndexTitleDict = getTitleDict()
+def ProcessTitleQuery(query):
+    cQuery = IF.cleanText(query)
+    resultDict = buildQueryDict(cQuery, IndexTitleDict)
+    topDocs = getTopDocs(resultDict)
+    return topDocs
+
+def mainProcessor(query):
+    summaryIndex = ProcessQuery(query)
+    titleIndex = ProcessTitleQuery(query)
+    sumOnly = [x for x in summaryIndex if x not in titleIndex]
+    topRank = titleIndex + sumOnly
+    return topRank
+
+
 # Query Processing Executers
 
 def interactiveSearch():
@@ -76,7 +111,7 @@ def interactiveSearch():
         if searchQuery == 'quit':
             break
         TimeAtBeginning = datetime.now()
-        foundDocs = ProcessQuery(searchQuery)
+        foundDocs = mainProcessor(searchQuery)
         TimeAtEnd = datetime.now()
 
         #show result
@@ -107,4 +142,4 @@ def getTestList():
 
 
 interactiveSearch()
-automatedTestSearch()
+#automatedTestSearch()

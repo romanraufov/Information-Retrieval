@@ -735,3 +735,27 @@ hr.color-white {
         transform: scaleX(1);
     }
 }
+
+
+
+
+
+svg {
+    width: 100px;
+    border-radius: 50%;
+    background:red; 
+    transform: rotate(-90deg);
+  }
+   
+  circle {
+    fill: none;
+    stroke-width: 32;
+    r: 16;
+    cx: 16;
+    cy: 16;
+  }
+   
+  circle.first {
+    stroke: green;
+  }
+   
