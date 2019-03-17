@@ -13,12 +13,12 @@ import IndexingMachineFunctions as IMF
 
 # load dict
 def getDict():
-    path2dict = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\MainIndexFile\\FullWeightedIndex_2019-02-28.pkl"
+    path2dict = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\MainIndexFile\\MainIndex_Complete_2019-03-17.pkl"
     pickle_in = open(path2dict,"rb")
     return pickle.load(pickle_in)
 
 def getTitleDict():
-    path2dict = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\MainIndexFile\\TitleIndex_2019-02-28V2.pkl"
+    path2dict = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\MainIndexFile\\TitleIndex_Complete_2019-03-17.pkl"
     pickle_in = open(path2dict,"rb")
     return pickle.load(pickle_in)
 
@@ -49,21 +49,6 @@ def buildQueryDict(query, IndexDict):
     queryDict = {}
     for term in query:
         termIndex = SearchIndex(term, IndexDict)
-        if not termIndex:
-            continue
-        docsWeight = retrieveWeights(termIndex)
-        for i in range(len(docsWeight[0])):
-            queryDict = add2QueryDict(docsWeight[0][i], docsWeight[1][i], queryDict)
-    return queryDict
-
-def buildTitleQueryDict(query, internalIndexDict):
-    """
-    input: query and SearchIndexDictionary
-    ouput: query dictionary containing documents and weights
-    """
-    queryDict = {}
-    for term in query:
-        termIndex = SearchIndex(term, internalIndexDict)
         if not termIndex:
             continue
         docsWeight = retrieveWeights(termIndex)
@@ -141,5 +126,5 @@ def getTestList():
     return testList
 
 
-interactiveSearch()
+#interactiveSearch()
 #automatedTestSearch()

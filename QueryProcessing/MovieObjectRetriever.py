@@ -7,7 +7,7 @@ def getMovieObjectsDict():
     return pickle.load(pickle_in)
 
 def SearchIndex(term, indexDict):
-    print("pointers to MovieObjects",term)
+    print("pointers to MovieObjects", term)
     try:
         termValue = indexDict[term]
     except:

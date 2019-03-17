@@ -14,11 +14,11 @@ def get_results(query):
 	
 def embed_result(result):
 	name = result['title']
-	urlIMDB = result["imdb_url"]
-	urlRotTom = result["rottentomatoes_url"]
-	urlAllmovie = result["allmovie_url"]
+	urlIMDB = str(result["imdb_url"])
+	urlRotTom = str(result["rottentomatoes_url"])
+	urlAllmovie = str(result["allmovie_url"])
 	url_platform = "testPlatform" 
-	year = result['year']
+	year = result['year'].split(".")[0]
 	summary = result['summary']
 	posSentiment = result["positive_sentiment"]
 	negSentiment = result["negative_sentiment"]

@@ -14,10 +14,20 @@ def index(request):
 
 def query(request):
 	enteredQuery = str(request.body, 'utf-8')
-	# retrieve document from results
-	moviePointers = getMoviePointers(enteredQuery)
-	print(moviePointers)
+	print("request: ", request)
 
+	# retrieve document from results
+	
+	#print(moviePointers)
+	checkboxTitle = True
+	checkboxSummary = True
+	# when checkbox input can be retrieved
+	if checkboxTitle and checkboxSummary:
+		moviePointers = getMoviePointers(enteredQuery)
+	elif checkboxTitle and not checkboxSummary:
+		moviePointers = getMoviePointersTitleQuery(enteredQuery)
+	else: 
+		moviePointers = getMoviePointersSummaryQuery(enteredQuery)
 	# return movieObject by parsing the found documents in the MovieObject CSV
 	movieObjects = getMovieObjects(moviePointers)
 
@@ -27,7 +37,15 @@ def query(request):
 	return HttpResponse(html)
 
 def getMoviePointers(enteredQuery):
-	topMoviePointers = QP.topRank(enteredQuery)
+	topMoviePointers = QP.mainProcessor(enteredQuery)
+	return topMoviePointers
+
+def getMoviePointersTitleQuery(enteredQuery):
+	topMoviePointers = QP.ProcessTitleQuery(enteredQuery)
+	return topMoviePointers
+
+def getMoviePointersSummaryQuery(enteredQuery):
+	topMoviePointers = QP.ProcessQuery(enteredQuery)
 	return topMoviePointers
 
 def getMovieObjects(listOfMoviePointers):

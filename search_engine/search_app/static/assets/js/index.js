@@ -28,6 +28,7 @@ $(function () {
         // Note: we disable elements AFTER the form data has been serialized.
         // Disabled form elements will not be serialized.
         $inputs.prop("disabled", true);
+        //$inputs.prop("disabled", false);
 
         // Fire off the request to /form.php
         request = $.ajax({
@@ -40,8 +41,8 @@ $(function () {
         request.done(function (response, textStatus, jqXHR){
             // Log a message to the console
             $(".jq-pmember").html(response)
-
         });
+
 
         // Callback handler that will be called on failure
         request.fail(function (jqXHR, textStatus, errorThrown){
@@ -60,7 +61,7 @@ $(function () {
         });
 
     });
-
+    
     // // Bind to the submit event of our form
     // $("#foo").submit(function(event){
     //
