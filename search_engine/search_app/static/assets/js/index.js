@@ -27,8 +27,8 @@ $(function () {
         // Let's disable the inputs for the duration of the Ajax request.
         // Note: we disable elements AFTER the form data has been serialized.
         // Disabled form elements will not be serialized.
-        $inputs.prop("disabled", true);
-        //$inputs.prop("disabled", false);
+        //$inputs.prop("disabled", true);
+        $inputs.prop("disabled", false);
 
         // Fire off the request to /form.php
         request = $.ajax({
@@ -61,7 +61,7 @@ $(function () {
         });
 
     });
-    
+
     // // Bind to the submit event of our form
     // $("#foo").submit(function(event){
     //
@@ -124,4 +124,9 @@ $(function () {
             $('#search_button').trigger('click');
         }
     });
+
+    //TODO: build further on this jquery to enable pop-out of this element with clicked elements
+    $(document).on("click",'.card', function(){
+        console.log("#on click .card is clicked", $(this));
+    })
 });
