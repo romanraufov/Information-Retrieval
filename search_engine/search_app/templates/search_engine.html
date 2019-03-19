@@ -74,7 +74,9 @@ function getCookie(name) {
                     var checkboxTitle = getCheckboxValue("#gridCheckTitle");
                     var checkboxKeyWords = getCheckboxValue("#gridCheckKeyWords");
                     var evaluationValues = getEvaluationValues();
-                    query = JSON.stringify([query, checkboxTitle, checkboxKeyWords, evaluationValues]);
+                    var formerQueryInfo = getFormerQueryInfo();
+                    // send query contains [currentQuery, currentTitle, currentKeyWords, [formerQuery, formerTitle, formerKeywords], eachResult[rank, pointer, evalvalue]]
+                    query = JSON.stringify([query, checkboxTitle, checkboxKeyWords, formerQueryInfo, evaluationValues]);
                     $("#sourcecontainer").html("<div class=\"row justify-content-md-center source-card\">\n" +
                         "\t<div class=\"col-sm-12 col-md-11\">\n" +
                         "\t\t<div class=\"card mb-3\">\n" +
@@ -95,9 +97,42 @@ function getCookie(name) {
 
             });
 
-            $('.evaluationSlider').on('click', function(){
-                console.log("evaluationSlider should be evaluated")
+            // for evaluation
+            $(document).on("click",'.evaluationSlider', function(){
                 $(this).addClass('evaluated');
+            })
+
+            $(document).on("click", "#search_button", function(){
+                var title_search= $('#gridCheckTitle:checked').val();
+                if (title_search!= "on"){
+                    title_search= 'off';
+                }
+
+                var oldTitleClass = $('#gridCheckTitle').attr('class').split(" ")
+                if(oldTitleClass.length > 1){
+                    $('#gridCheckTitle').removeClass(oldTitleClass[1])
+                }
+                $('#gridCheckTitle').addClass('formerSearchTitle-'.concat(title_search))
+
+                var keyword_search= $('#gridCheckKeyWords:checked').val();
+                if (keyword_search!= "on"){
+                    keyword_search= 'off';
+                }
+
+                var oldKeyWordsClass = $('#gridCheckKeyWords').attr('class').split(" ")
+                if(oldKeyWordsClass.length > 1){
+                    $('#gridCheckKeyWords').removeClass(oldKeyWordsClass[1])
+                }
+                $('#gridCheckKeyWords').addClass('formerSearchKeywords-'.concat(keyword_search))
+
+                var formerQuery = $('#Searchfield').val()
+                formerQuery = formerQuery.split(' ').join('_')
+
+                var oldQueryClass = $('#Searchfield').attr('class').split(" ")
+                if(oldQueryClass.length > 1){
+                    $('#Searchfield').removeClass(oldQueryClass[1])
+                }
+                $('#Searchfield').addClass(formerQuery);
             });
         });
 
@@ -134,15 +169,35 @@ function getCookie(name) {
             var evaluationSliders = []
             rank = 0
             $('.evaluationSlider').each(function(){
+                console.log("in evaluation term: ", $(this)[0])
                 var evalID = $(this).attr('id').split("-")
                 var evalRank = evalID[1]
                 var evalPointer = evalID[2]
-                var evalValue = $(this)[0].value
+                if($(this).hasClass('evaluated')){
+                    console.log("evaluation administred")
+                    var evalValue = $(this)[0].value;
+                }
+                else{
+                    var evalValue = -1;
+                }
                 //console.log("in getEvaluationValues, this: ", $(this)[0])
                 //console.log("in getEvaluationValues, evalValue: ", evalValue)
-                evaluationSliders.push([evalRank, evalPointer, evalValue])
+                evaluationSliders.push([evalRank, evalPointer, evalValue]);
             });
             return evaluationSliders
+        }
+
+        function getFormerQueryInfo(){
+            console.log("getFormerQueryInfo get class of element: ", $('#gridCheckTitle').attr('class').split(" "))
+            var titleSearchList = $('#gridCheckTitle').attr('class').split(" ")
+            var titleSearch = titleSearchList[titleSearchList.length-1]
+            var keywordSearchList = $('#gridCheckKeyWords').attr('class').split(" ")
+            var keywordSearch = keywordSearchList[keywordSearchList.length-1]
+            // TODO: hierna kijken, hier zit nog een bug
+            var formerQueryList = $('#Searchfield').attr('class').split(" ")
+            var formerQuery = formerQueryList[formerQueryList.length-1]
+            console.log("getFormerQueryInfo in search_engine: ", formerQuery, titleSearch, keywordSearch)
+            return [formerQuery, titleSearch, keywordSearch]
         }
 
 	</script>
@@ -174,7 +229,7 @@ function getCookie(name) {
                                             </div>
                                         </div>
                                         <input type="text"
-                                               class="form-control"
+                                               class="form-control start-up-class"
                                                id="Searchfield"
                                                placeholder="search your movie..">
                                     </div>   
@@ -226,7 +281,7 @@ function getCookie(name) {
                                                     <label><strong>Search on:</strong></label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input"
+                                                    <input class="form-check-input formerSearchTitle-on"
                                                            type="checkbox"
                                                            id="gridCheckTitle" checked>
                                                     <label class="form-check-label"
@@ -235,7 +290,7 @@ function getCookie(name) {
                                                     </label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input"
+                                                    <input class="form-check-input formerSearchKeywords-on"
                                                            type="checkbox"
                                                            id="gridCheckKeyWords" checked>
                                                     <label class="form-check-label"
