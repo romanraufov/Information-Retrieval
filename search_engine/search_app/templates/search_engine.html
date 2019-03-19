@@ -70,7 +70,11 @@ function getCookie(name) {
 				$(this).toggleClass('nonactive-keyword');
 			});
             $(".do_search").click(function () {
-					var query = $("#Searchfield").val();
+                    var query = $("#Searchfield").val();
+                    var checkboxTitle = getCheckboxValue("#gridCheckTitle");
+                    var checkboxKeyWords = getCheckboxValue("#gridCheckKeyWords");
+                    var evaluationValues = getEvaluationValues();
+                    query = JSON.stringify([query, checkboxTitle, checkboxKeyWords, evaluationValues]);
                     $("#sourcecontainer").html("<div class=\"row justify-content-md-center source-card\">\n" +
                         "\t<div class=\"col-sm-12 col-md-11\">\n" +
                         "\t\t<div class=\"card mb-3\">\n" +
@@ -91,7 +95,10 @@ function getCookie(name) {
 
             });
 
-
+            $('.evaluationSlider').on('click', function(){
+                console.log("evaluationSlider should be evaluated")
+                $(this).addClass('evaluated');
+            });
         });
 
         function store_source(button, url, publish_date, title, snippet, type, outlet){
@@ -111,6 +118,31 @@ function getCookie(name) {
 
                     }
                 })
+        }
+
+        function getCheckboxValue(checkbox){
+            var searchTerm = checkbox.concat(":checked");
+            rawValue = $(searchTerm).val();
+            var boolVal = "False"
+            if(rawValue == "on"){
+                boolVal = "True"
+            }
+            return boolVal
+        }
+
+        function getEvaluationValues(){
+            var evaluationSliders = []
+            rank = 0
+            $('.evaluationSlider').each(function(){
+                var evalID = $(this).attr('id').split("-")
+                var evalRank = evalID[1]
+                var evalPointer = evalID[2]
+                var evalValue = $(this)[0].value
+                //console.log("in getEvaluationValues, this: ", $(this)[0])
+                //console.log("in getEvaluationValues, evalValue: ", evalValue)
+                evaluationSliders.push([evalRank, evalPointer, evalValue])
+            });
+            return evaluationSliders
         }
 
 	</script>
@@ -144,9 +176,9 @@ function getCookie(name) {
                                         <input type="text"
                                                class="form-control"
                                                id="Searchfield"
-                                               placeholder="voer hier uw query in...">
-                                    </div>
-                                </div>
+                                               placeholder="search your movie..">
+                                    </div>   
+                                 </div>
                                 <div class="form-group row">
                                     <!----><div class="container">
                                         <div class="row justify-content-md-center">
@@ -196,18 +228,18 @@ function getCookie(name) {
                                                 <div class="form-check">
                                                     <input class="form-check-input"
                                                            type="checkbox"
-                                                           id="gridCheck1" checked>
+                                                           id="gridCheckTitle" checked>
                                                     <label class="form-check-label"
-                                                           for="gridCheck1">
+                                                           for="gridCheckTitle">
                                                         Title
                                                     </label>
                                                 </div>
                                                 <div class="form-check">
                                                     <input class="form-check-input"
                                                            type="checkbox"
-                                                           id="gridCheck2" checked>
+                                                           id="gridCheckKeyWords" checked>
                                                     <label class="form-check-label"
-                                                           for="gridCheck2">
+                                                           for="gridCheckKeyWords">
                                                         Keywords
                                                     </label>
                                                 </div>

@@ -125,8 +125,34 @@ $(function () {
         }
     });
 
+
+    var title_search= $('#gridCheck1:checked').val();
+    if (title_search== undefined){
+        title_search= 'off';
+    }
+    var keyword_search= $('#gridCheck2:checked').val();
+    if (keyword_search== undefined){
+        keyword_search= 'off';
+    }
+
+
     //TODO: build further on this jquery to enable pop-out of this element with clicked elements
     $(document).on("click",'.card', function(){
         console.log("#on click .card is clicked", $(this));
     })
+
+
+
+    // Slider stuff
+    $("#testSlider").slider({
+        tooltip: "always"
+    });
+
+
+    $('#ex1').slider({
+        formatter: function(value) {
+            return 'Current value: ' + value;
+        }
+    });
+
 });

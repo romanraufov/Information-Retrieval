@@ -3,6 +3,7 @@ from django.http import HttpResponse
 import os
 import sys
 from querier import get_results
+import ast
 # Create your views here.
 
 sys.path.insert(0, 'C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\QueryProcessing\\')
@@ -13,20 +14,27 @@ def index(request):
 	return render(request, "search_engine.html", {})
 
 def query(request):
-	enteredQuery = str(request.body, 'utf-8')
-	print("request: ", request)
+	#fullquery = ast.literal_eval(str(request.body, 'utf-8'))
+	print("request.body in views: ", request.body)
+	fullquery = ast.literal_eval(str(request.body, 'utf-8'))
+	print("request: ", fullquery)
+	# fullquery = [0:query, 1:TitleCheckbox, 2:KeywordsCheckbox]
+	enteredQuery = fullquery[0]
 
 	# retrieve document from results
 	
 	#print(moviePointers)
-	checkboxTitle = True
-	checkboxSummary = True
+	checkboxTitle = fullquery[1]
+	checkboxSummary = fullquery[2]
 	# when checkbox input can be retrieved
-	if checkboxTitle and checkboxSummary:
+	if checkboxTitle == "True" and checkboxSummary == "True":
+		print("first checkbox statement")
 		moviePointers = getMoviePointers(enteredQuery)
-	elif checkboxTitle and not checkboxSummary:
+	elif checkboxTitle == "True" and checkboxSummary != "True":
+		print("second checkbox statement")
 		moviePointers = getMoviePointersTitleQuery(enteredQuery)
 	else: 
+		print("last checkbox statement")
 		moviePointers = getMoviePointersSummaryQuery(enteredQuery)
 	# return movieObject by parsing the found documents in the MovieObject CSV
 	movieObjects = getMovieObjects(moviePointers)
