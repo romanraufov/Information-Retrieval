@@ -15,6 +15,7 @@ def index(request):
 
 def query(request):
 	#fullquery = ast.literal_eval(str(request.body, 'utf-8'))
+	# send request.body contains [currentQuery, currentTitle, currentKeyWords, [formerQuery, formerTitle, formerKeywords], eachResult[rank, pointer, evalvalue]]
 	print("request.body in views: ", request.body)
 	fullquery = ast.literal_eval(str(request.body, 'utf-8'))
 	print("request: ", fullquery)
