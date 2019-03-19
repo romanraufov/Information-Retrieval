@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-
+    {% load static %}
 <head>
-    <title>Zoeken</title>
+    <title>Search Movie</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible"
           content="IE=edge">
@@ -11,22 +11,27 @@
     <link rel="stylesheet"
           type="text/css"
           media="screen"
-          href="bootstrap/css/bootstrap.min.css" />
+          href="{% static "bootstrap/css/bootstrap.min.css" %}" />
+          <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          href="{% static "bootstrap/css/bootstrap.min.css" %}" />
+
     <link rel="stylesheet"
-          href="assets/icon-font/css/font-awesome.min.css">
+          href="{% static "assets/icon-font/css/font-awesome.min.css" %}">
     <link rel="stylesheet"
       type="text/css"
       media="screen"
-      href="assets/style.css" />
+      href="{% static "assets/style.css" %}" />
 
-    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="{% static "assets/js/jquery-3.3.1.js" %}"></script>
 
     <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
             integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
             crossorigin="anonymous"></script>
 
-    <script src="assets/js/index.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="{% static "assets/js/index.js" %}"></script>
+    <script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
 	<script>
 	function csrfSafeMethod(method) {
     // these HTTP methods do not require CSRF protection
@@ -65,7 +70,11 @@ function getCookie(name) {
 				$(this).toggleClass('nonactive-keyword');
 			});
             $(".do_search").click(function () {
-					var query = $("#Searchfield").val();
+                    var query = $("#Searchfield").val();
+                    var checkboxTitle = getCheckboxValue("#gridCheckTitle");
+                    var checkboxKeyWords = getCheckboxValue("#gridCheckKeyWords");
+                    var evaluationValues = getEvaluationValues();
+                    query = JSON.stringify([query, checkboxTitle, checkboxKeyWords, evaluationValues]);
                     $("#sourcecontainer").html("<div class=\"row justify-content-md-center source-card\">\n" +
                         "\t<div class=\"col-sm-12 col-md-11\">\n" +
                         "\t\t<div class=\"card mb-3\">\n" +
@@ -86,7 +95,10 @@ function getCookie(name) {
 
             });
 
-
+            $('.evaluationSlider').on('click', function(){
+                console.log("evaluationSlider should be evaluated")
+                $(this).addClass('evaluated');
+            });
         });
 
         function store_source(button, url, publish_date, title, snippet, type, outlet){
@@ -94,7 +106,7 @@ function getCookie(name) {
             let questionID = $('.do_search').attr('id');
             let parentDiv = $(button).parents(".jq-addsource");
 
-            $.post( "database/Model_Source.php", { func: "addToKnowledgeBase", question_id : questionID, url : url, publish_date : publish_date, title: title, snippet : snippet, type : type, outlet : outlet })
+            $.post( "{% static "database/Model_Source.php"%}", { func: "addToKnowledgeBase", question_id : questionID, url : url, publish_date : publish_date, title: title, snippet : snippet, type : type, outlet : outlet })
                 .done(function( data ) {
                     if (!(data === 'success')){
                         alert(data)
@@ -108,13 +120,38 @@ function getCookie(name) {
                 })
         }
 
+        function getCheckboxValue(checkbox){
+            var searchTerm = checkbox.concat(":checked");
+            rawValue = $(searchTerm).val();
+            var boolVal = "False"
+            if(rawValue == "on"){
+                boolVal = "True"
+            }
+            return boolVal
+        }
+
+        function getEvaluationValues(){
+            var evaluationSliders = []
+            rank = 0
+            $('.evaluationSlider').each(function(){
+                var evalID = $(this).attr('id').split("-")
+                var evalRank = evalID[1]
+                var evalPointer = evalID[2]
+                var evalValue = $(this)[0].value
+                //console.log("in getEvaluationValues, this: ", $(this)[0])
+                //console.log("in getEvaluationValues, evalValue: ", evalValue)
+                evaluationSliders.push([evalRank, evalPointer, evalValue])
+            });
+            return evaluationSliders
+        }
+
 	</script>
 </head>
 
 <body class="page_search_engine">
     <!-- 此处显示demo图作为参考-->
     <div class="demopage hidden">
-        <img src="assets/demo/search_engine.png">
+        <img src="{% static "assets/demo/search_engine.png" %}">
     </div>
 
     <div class="container-fluid my-layout d-flex flex-column">
@@ -139,18 +176,18 @@ function getCookie(name) {
                                         <input type="text"
                                                class="form-control"
                                                id="Searchfield"
-                                               placeholder="voer hier uw query in...">
-                                    </div>
-                                </div>
+                                               placeholder="search your movie..">
+                                    </div>   
+                                 </div>
                                 <div class="form-group row">
-                                    <div class="container">
+                                    <!----><div class="container">
                                         <div class="row justify-content-md-center">
-                                            <div class="col-lg-3 text-center">
-                                                <div class="form-group mb-0">
-                                                    <label><strong>Zoek in deze jaren</strong></label>
+                                            <div id="year-filter-block" class="col-lg-3 text-center">
+                                               <div class="form-group mb-0">
+                                                    <label><strong>Search in between years</strong></label>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="datumtitle">van:</span>
+                                                    <span class="datumtitle">from:</span>
                                                 </div>
                                                 <div class="form-group row justify-content-center">
                                                     <div class="input-group col-sm-12">
@@ -164,11 +201,10 @@ function getCookie(name) {
                                                                class="form-control"
                                                                id="datefrom"
                                                                placeholder="yyyy">
-                                                        <!-- 预留 placeholder="yyy/mm/dd" -->
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="datumtitle">tot:</span>
+                                                    <span class="datumtitle">till:</span>
                                                 </div>
                                                 <div class="form-group row justify-content-center">
                                                     <div class="input-group col-sm-12">
@@ -182,29 +218,28 @@ function getCookie(name) {
                                                                class="form-control"
                                                                id="dateto"
                                                                placeholder="yyyy">
-                                                        <!-- 预留 placeholder="yyy/mm/dd" -->
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-3">
+                                            <div id="query-rules" class="col-lg-3">
                                                 <div class="form-group mb-0">
-                                                    <label><strong>Zoek Op:</strong></label>
+                                                    <label><strong>Search on:</strong></label>
                                                 </div>
                                                 <div class="form-check">
                                                     <input class="form-check-input"
                                                            type="checkbox"
-                                                           id="gridCheck1" checked>
+                                                           id="gridCheckTitle" checked>
                                                     <label class="form-check-label"
-                                                           for="gridCheck1">
-                                                        Titel
+                                                           for="gridCheckTitle">
+                                                        Title
                                                     </label>
                                                 </div>
                                                 <div class="form-check">
                                                     <input class="form-check-input"
                                                            type="checkbox"
-                                                           id="gridCheck2" checked>
+                                                           id="gridCheckKeyWords" checked>
                                                     <label class="form-check-label"
-                                                           for="gridCheck2">
+                                                           for="gridCheckKeyWords">
                                                         Keywords
                                                     </label>
                                                 </div>
@@ -214,9 +249,9 @@ function getCookie(name) {
                                 </div>
                                 <div class="row justify-content-center">
                                     <div class="col-sm col-md-12 text-center">
-                                        <button type="button" class="btn btn-primary bluebutton do_search"><i class="fa fa-search"
+                                        <button id="search_button" type="button" class="btn btn-primary bluebutton do_search"><i class="fa fa-search"
                                                aria-hidden="true"></i>
-                                            Zoek films
+                                            Search Movies
                                         </button>
                                     </div>
                                 </div>

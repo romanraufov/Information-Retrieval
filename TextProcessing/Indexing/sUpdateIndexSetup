@@ -1,0 +1,23 @@
+How to update the index
+
+1) new list of documents have been gained
+2) how to adapt index?
+    -merge docs into old docs and rebuild index (lame-version)
+    -build new index based on list of new docs and merge this index into the old index (kick-ass version)
+
+3) how to merge?
+merge new list with old list for TF-IDF
+    -iterate through new index:
+        - if term is not in old index, simply put it in
+        - more likely, if the term is in the old index:
+            - go to docs   
+                -iterate through docs in new index
+                    -if they are in old index:
+                        replace it and replace the values in "freq" and "pos list"
+                    -if not:
+                        add it them
+                recalculate DF
+                recalculate TF-IDF
+            throw away old index
+
+Its probably a good practise to keep track of when what files have been merged
