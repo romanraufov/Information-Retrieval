@@ -7,3 +7,4 @@ Multicrawler/rottentomatoes/*
 *.pyc
 *.pkl
 *.pickle
+.vscode/launch.json
