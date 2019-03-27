@@ -44,7 +44,8 @@ def Indexer(BatchDF):
 		try: 
 			KeyName = row["cleantitle"]
 			#listOfTerms = IF.cleanText(str(row["imdb_summary"]) + str(row["tmdb_summary"]) + str(row["flixable_summary"]) + str(row["rottentomatoes_summary"]) + str(row["allmovie_summary"]) + str(row["wiki_summary"]))
-			listOfTerms = IF.cleanText(str(row["title"]))
+			#listOfTerms = IF.cleanText(str(row["title"])) # turn on for title indexing
+			listOfTerms = IF.cleanText(str(row["imdb_summary"]) + str(row["tmdb_summary"]) + str(row["flixable_summary"]) + str(row["rottentomatoes_summary"]) + str(row["allmovie_summary"]) + str(row["wiki_summary"]) + str(row["wiki_summary"]) + str(row["imdb_synopsis"]) + str(row["wiki_summary"]))
 		except:
 			print("fail due to Something")
 			print("title: ", row["title"])
@@ -155,7 +156,7 @@ def merge2MainIndex():
 		pickle_in = open(pkl,"rb")
 		mergeBatchInMainIndex(MainIndexDictionary, pickle.load(pickle_in))
 	path2MainIndex = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\MainIndexFile\\"
-	IF.saveDict(MainIndexDictionary, path2MainIndex + "TitleIndex", ".pkl")
+	IF.saveDict(MainIndexDictionary, path2MainIndex + "MainIndex", ".pkl")
 	IMF.addTime("Merging Complete, MainIndex has been saved")
 
 # input: batch size, number of parallel processes

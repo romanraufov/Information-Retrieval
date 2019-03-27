@@ -17,17 +17,9 @@ def get_results(query):
 def embed_result(result, number):
 	name = result['title']
 	cleanTitle = result['cleantitle']
-	urlIMDB = str(result["imdb_url"])
-	urlRotTom = str(result["rottentomatoes_url"])
-	urlAllmovie = str(result["allmovie_url"])
-	url_platform = "testPlatform" 
 	year = result['year'].split(".")[0]
-	summary = result['summary']
 	posSentiment = result["positive_sentiment"]
 	negSentiment = result["negative_sentiment"]
-	scoreAllMovie = result["allmovie_rating"]
-	scoreIMDB = result["imdb_rating"]
-	scoreRomTom = result["rottentomatoes_audiencerating"]
 	
 	# url = result['url']
 	# url_platform = result['url_platform']
@@ -60,10 +52,7 @@ def embed_result(result, number):
 												</div>
 											</div>
 											<div class="col-sm-12 mt-2 mt-md-0 col-md-3 options justify-content-center align-items-center">
-											<strong>Scores</strong></br>
-											<span><a href= """+urlIMDB+"""> IMDb</a>:"""+scoreIMDB+"""</span></br>
-											<span><a href= """+urlRotTom+""">RottenTomatoes</a>:"""+scoreRomTom+"""</span></br>
-											<span><a href= """+urlAllmovie+""">Allmovies</a>:"""+scoreAllMovie+"""</span>
+"""+QH.getSiteScores(result)+"""
 											</div>
 										</div>
 									</div>
@@ -80,3 +69,7 @@ def embed_result(result, number):
 	return html
 
 
+
+# <span><a href= """+urlIMDB+"""> IMDb</a>:"""+scoreIMDB+"""</span></br>
+# 											<span><a href= """+urlRotTom+""">RottenTomatoes</a>:"""+scoreRomTom+"""</span></br>
+# 											<span><a href= """+urlAllmovie+""">Allmovies</a>:"""+scoreAllMovie+"""</span>

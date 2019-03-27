@@ -787,6 +787,10 @@ svg {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin: 9px;
 }
 
 input[type=range] {
@@ -840,4 +844,51 @@ input[type=range] {
     border-radius: 25px;
     background: #A1D0FF;
     cursor: pointer;
+  }
+
+  .evaluationSlider{
+      opacity: 0.4;
+  }
+
+  .evaluationSlider.evaluated{
+      opacity: 1 !important;
+  }
+
+  h1{
+    font-size: 3.5rem;
+  }
+
+  @media screen and (max-width: 1000px){
+    h1{
+        font-size: 2.5rem;
+    }
+  }
+
+
+  .title-box{
+    text-align: center;
+    color: #154274;
+  }
+
+  #assessor-box{
+      width: 200px;
+      height: 95px;
+      position: absolute;
+      background-clip: border-box;
+      border: 1px solid rgba(0,0,0,.125);
+      border-radius: .25rem;
+      background-color: beige;
+      right: 20px;
+      top: 120px;
+      z-index: 500;
+  }
+
+  #header-element{
+    display: -webkit-box;
+  }
+
+  .accessor-form{
+      margin: 5px;
+      width: 95%;
+      background-color: #fff;
   }

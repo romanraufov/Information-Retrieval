@@ -31,13 +31,35 @@ def getSVG(PosSent, NegSent):
 #     return bestSnippet
 
 def getBestSnippet(resultInfo):
-    listSums = ["summary", "rottentomatoes_summary", "allmovie_summary", "flixable_summary"]
+    listSums = ["rottentomatoes_summary", "allmovie_summary", "flixable_summary", "imdb_summary", "tmdb_summary", "wiki_summary"] # "summary" 
     maxLength = 30
     for summary in listSums:
+        #print("resultInfo keys: ", resultInfo.keys())
         snippet = resultInfo[summary].split(" ")
         if len(snippet) > 3:
             if len(snippet) > maxLength:
                 snippet = snippet[:maxLength - 1]
                 break
     bestSnippet = " ".join(snippet)
+    bestSnippet = bestSnippet + "..."
     return bestSnippet
+
+
+def getSiteScores(resultInfo):
+    nameSites = ["IMDb", "RottenTomatoes", "Allmovies"]
+    listSites = ["imdb_url","rottentomatoes_url","allmovie_url"]
+    listScores = ["imdb_rating", "rottentomatoes_audiencerating", "allmovie_rating"]
+    scoresInHtml = ""
+    for i in range(len(listScores)):
+        if hasNumbers(resultInfo[listScores[i]]):
+            print("QH- score present:", resultInfo[listScores[i]], " from site: ", listSites[i])
+            scoresInHtml += """<span><a href= """+resultInfo[listSites[i]]+""">"""+nameSites[i]+"""</a>:"""+resultInfo[listScores[i]]+"""</span></br>"""
+    if scoresInHtml:
+        scoresInHtml = "<strong>Scores</strong></br>" + scoresInHtml
+    return scoresInHtml
+
+def hasNumbers(string2check):
+    return any(char.isdigit() for char in string2check)
+    
+
+   

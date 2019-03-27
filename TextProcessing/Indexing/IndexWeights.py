@@ -3,6 +3,9 @@ import pickle
 import sys
 import math
 
+import sys
+sys.path.insert(0, 'C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\')
+
 # local import
 import IndexerFunctions as IF
 import IndexingMachineFunctions as IMF
@@ -12,14 +15,14 @@ import IndexingMultiple as IM
 
 # load dict
 def getDict():
-    path2dict = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\MainIndexFile\\TitleIndex_2019-03-17.pkl"
+    path2dict = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\MainIndexFile\\MainIndex.pkl"
     pickle_in = open(path2dict,"rb")
     return pickle.load(pickle_in)
 
 # save dict
 def saveNewDict(WeightDict):
     path2save = "C:\\Users\\chris\\OneDrive\\Documenten\\IR_DS2019\\TextProcessing\\Indexing\\MultipleIndexLogFiles\\MainIndexFile\\"
-    fullPath = path2save + "TitleIndex_Complete"
+    fullPath = path2save + "MainIndex_Complete"
     IF.saveDict(WeightDict, fullPath, ".pkl")
     IMF.addTime("Dictionary with weights has been saved in folder: \n" + path2save)
 

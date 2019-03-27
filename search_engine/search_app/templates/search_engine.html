@@ -56,7 +56,6 @@ function getCookie(name) {
 
 	
         $(document).ready(function () {
-		
 			var csrftoken = getCookie('csrftoken');
 	$.ajaxSetup({
 		beforeSend: function(xhr, settings) {
@@ -75,8 +74,9 @@ function getCookie(name) {
                     var checkboxKeyWords = getCheckboxValue("#gridCheckKeyWords");
                     var evaluationValues = getEvaluationValues();
                     var formerQueryInfo = getFormerQueryInfo();
-                    // send query contains [currentQuery, currentTitle, currentKeyWords, [formerQuery, formerTitle, formerKeywords], eachResult[rank, pointer, evalvalue]]
-                    query = JSON.stringify([query, checkboxTitle, checkboxKeyWords, formerQueryInfo, evaluationValues]);
+                    var currentAssessor = getAssessor();
+                    // send query contains [currentQuery, currentTitle, currentKeyWords, [formerQuery, formerTitle, formerKeywords], eachResult[rank, pointer, evalvalue], [currentAssessorName, currentAssessorGroup]]
+                    query = JSON.stringify([query, checkboxTitle, checkboxKeyWords, formerQueryInfo, evaluationValues, currentAssessor]);
                     $("#sourcecontainer").html("<div class=\"row justify-content-md-center source-card\">\n" +
                         "\t<div class=\"col-sm-12 col-md-11\">\n" +
                         "\t\t<div class=\"card mb-3\">\n" +
@@ -193,11 +193,16 @@ function getCookie(name) {
             var titleSearch = titleSearchList[titleSearchList.length-1]
             var keywordSearchList = $('#gridCheckKeyWords').attr('class').split(" ")
             var keywordSearch = keywordSearchList[keywordSearchList.length-1]
-            // TODO: hierna kijken, hier zit nog een bug
             var formerQueryList = $('#Searchfield').attr('class').split(" ")
             var formerQuery = formerQueryList[formerQueryList.length-1]
             console.log("getFormerQueryInfo in search_engine: ", formerQuery, titleSearch, keywordSearch)
             return [formerQuery, titleSearch, keywordSearch]
+        }
+
+        function getAssessor(){
+            var assessorName = $('#accessor-form-name').val()
+            var assessorGroup = $('#accessor-form-group').val()
+            return [assessorName, assessorGroup]
         }
 
 	</script>
@@ -216,8 +221,15 @@ function getCookie(name) {
             <!-- layout_content -->
             <div class="col-sm p-0 layout_content d-flex justify-content-center ">
                 <div class="container-fluid">
-                    <div class="row justify-content-md-center">
+                    <div id="header-element" class="row justify-content-md-center">
+                        <div id="assessor-box">
+                            <input type='text' id="accessor-form-name" class='form-control accessor-form' id='accessor-name' placeholder="Name Assessor">
+                            <input type='text' id="accessor-form-group" class='form-control accessor-form' id='accessor-group' placeholder="Group Number">
+                        </div>
                         <div class="col-sm-12 col-md-10">
+                            <div class="title-box">
+                                <h1>Another Movie Search Engine</h1>
+                            </div>
                             <!-- search input -->
                             <form class="mt-3">
                                 <div class="form-group row justify-content-center">
@@ -295,7 +307,7 @@ function getCookie(name) {
                                                            id="gridCheckKeyWords" checked>
                                                     <label class="form-check-label"
                                                            for="gridCheckKeyWords">
-                                                        Keywords
+                                                        Summary Search
                                                     </label>
                                                 </div>
                                             </div>
